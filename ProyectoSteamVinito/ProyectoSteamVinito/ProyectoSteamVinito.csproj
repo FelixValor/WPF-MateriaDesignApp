@@ -7,10 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Vista\copy.ico" />
+    <None Remove="Vista\logo-IESGP-FP.png" />
+    <None Remove="Vista\settings.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Modelo\" />
-    <Folder Include="Recursos\" />
     <Folder Include="VistaModelo\" />
-    <Folder Include="Vista\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Vista\copy.ico" />
+    <Resource Include="Vista\logo-IESGP-FP.png" />
+    <Resource Include="Vista\settings.ico" />
   </ItemGroup>
 
 </Project>
