@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ProyectoSteamVinito___Formulario_Insercion</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Modelo\" />
+    <Folder Include="Recursos\" />
+    <Folder Include="VistaModelo\" />
+    <Folder Include="Vista\" />
+  </ItemGroup>
+
+</Project>
