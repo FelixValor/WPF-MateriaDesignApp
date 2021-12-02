@@ -53,7 +53,7 @@ namespace ProyectoSteamVinito.Vista {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ProyectoSteamVinito;V1.0.0.0;component/vista/inicio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProyectoSteamVinito;component/vista/inicio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vista\Inicio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
