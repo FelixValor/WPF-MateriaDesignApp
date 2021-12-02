@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Alejandro Montero\\.nuget\\packages\\": {},
+    "C:\\Users\\alexm\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\codigoDI\\DI-UT3-Trabajo\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion.csproj",
+      "projectUniqueName": "D:\\DAM2\\DI\\codigoDI\\ProyectoVino\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion.csproj",
       "projectName": "ProyectoSteamVinito - Formulario Insercion",
-      "projectPath": "C:\\codigoDI\\DI-UT3-Trabajo\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion.csproj",
-      "packagesPath": "C:\\Users\\Alejandro Montero\\.nuget\\packages\\",
-      "outputPath": "C:\\codigoDI\\DI-UT3-Trabajo\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\obj\\",
+      "projectPath": "D:\\DAM2\\DI\\codigoDI\\ProyectoVino\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion.csproj",
+      "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+      "outputPath": "D:\\DAM2\\DI\\codigoDI\\ProyectoVino\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alejandro Montero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
