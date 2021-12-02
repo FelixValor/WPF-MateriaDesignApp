@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
+using System.Windows.Threading;
 
 namespace ProyectoSteamVinito___Formulario_Insercion
 {
@@ -23,6 +25,16 @@ namespace ProyectoSteamVinito___Formulario_Insercion
         public MainWindow()
         {
             InitializeComponent();
+
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Tick += new EventHandler(UpdateTimer_Tick);
+            timer.Interval = new TimeSpan(0, 0, 1);
+            timer.Start();
+        }
+
+        private void UpdateTimer_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Content = DateTime.Now.ToString();
         }
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
