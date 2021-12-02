@@ -18,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Vista\copy.ico" />
     <Resource Include="Vista\logo-IESGP-FP.png" />
     <Resource Include="Vista\settings.ico" />
