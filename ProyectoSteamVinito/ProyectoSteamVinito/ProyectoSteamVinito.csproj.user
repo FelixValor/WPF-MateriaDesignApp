@@ -10,12 +10,18 @@
     <Compile Update="Vista\Inicio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vista\vistaPrincipal.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Vista\Inicio.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vista\vistaPrincipal.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

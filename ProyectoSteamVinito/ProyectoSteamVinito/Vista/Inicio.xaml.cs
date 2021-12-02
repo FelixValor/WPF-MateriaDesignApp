@@ -17,9 +17,26 @@ namespace ProyectoSteamVinito.Vista
     /// </summary>
     public partial class Inicio : Window
     {
-        public Inicio()
+        MainWindow mw;
+        public Inicio(MainWindow mw)
         {
             InitializeComponent();
+            this.mw = mw;
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            mw.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

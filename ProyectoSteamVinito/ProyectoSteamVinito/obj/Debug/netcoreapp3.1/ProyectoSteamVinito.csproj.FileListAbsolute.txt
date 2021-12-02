@@ -20,3 +20,6 @@ C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoS
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\MainWindow.g.cs
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\MainWindow.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml

@@ -29,7 +29,7 @@ namespace ProyectoSteamVinito
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Visibility = Visibility.Hidden;
-            Inicio inicio = new Inicio();
+            Inicio inicio = new Inicio(this);
             inicio.ShowDialog();
         }
     }

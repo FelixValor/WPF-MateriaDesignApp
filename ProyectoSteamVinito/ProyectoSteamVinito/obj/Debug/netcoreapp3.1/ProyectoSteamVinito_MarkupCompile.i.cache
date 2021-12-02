@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\App.xaml
-2270059840
+31700573156
 
-6-320694254
+7-1131186477
 192-1533232326
-Vista\Inicio.xaml;Vista\MainWindow.xaml;
+Vista\Inicio.xaml;Vista\MainWindow.xaml;Vista\vistaPrincipal.xaml;
 
-False
+True
 
