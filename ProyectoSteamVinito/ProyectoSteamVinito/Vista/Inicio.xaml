@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ProyectoSteamVinito.Vista"
+        xmlns:local="clr-namespace:ProyectoSteamVinito.Vista" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Proyecto Vinito -- Inicio" Height="450" Width="800" Closed="Window_Closed">
     <Grid>
@@ -18,14 +19,11 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Orientation="Horizontal">
-                <Button Margin="10,0" Height="60" Width="60" Click="Button_Click">
-                    <Image Source="/Vista/copy.ico"/>
-                </Button>                
-                <Button Margin="10,0" Height="60" Width="60" Click="Button_Click_1">
-                    <Image Source="/Vista/settings.ico"/>
+                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Icon"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
                 </Button>
-                <Button Margin="10,0" Height="60" Width="60" Click="Button_Click_1">
-                    <Image Source="/Vista/settings.ico"/>
+                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Cog, Size=50}" ToolTip="Icon"
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
                 </Button>
             </StackPanel>
             <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>

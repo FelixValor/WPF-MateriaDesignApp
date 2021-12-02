@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/azoAQE+qAb1SYTjApWYQ+MSw6x1F06lIF3VOvURr8npjuk1tha9Yon7WRraBa8lF3DCgoWjmN58VFdmHm89bg==",
+  "dgSpecHash": "KThXyusKooNx1K90q0Bu1H6/ACJDd9j0qEx61dVTyrN47enA/6yczvevm/AO8f59k/c/fLFmDhDA1FLMtZMKow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+  "projectFilePath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Felix\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
