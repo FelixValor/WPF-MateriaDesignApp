@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {}
+    "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {
+    "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+        "projectUniqueName": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
         "projectName": "ProyectoSteamVinito",
-        "projectPath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+        "projectPath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
         "packagesPath": "C:\\Users\\Felix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\obj\\",
+        "outputPath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
