@@ -24,5 +24,19 @@ namespace ProyectoSteamVinito___Formulario_Insercion
         {
             InitializeComponent();
         }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (e.NewSize.Width <= 500)
+            {
+                VistaColumnas.Visibility = Visibility.Visible;
+                VistaTabular.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                VistaColumnas.Visibility = Visibility.Collapsed;
+                VistaTabular.Visibility = Visibility.Visible;
+            }
+        }
     }
 }

@@ -1,0 +1,20 @@
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.exe
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.deps.json
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.runtimeconfig.json
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.runtimeconfig.dev.json
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.dll
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.pdb
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.csproj.AssemblyReference.cache
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\App.g.cs
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion_MarkupCompile.cache
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion_MarkupCompile.lref
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.g.resources
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.GeneratedMSBuildEditorConfig.editorconfig
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.AssemblyInfoInputs.cache
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.AssemblyInfo.cs
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.csproj.CoreCompileInputs.cache
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.dll
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.pdb
+C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.genruntimeconfig.cache
