@@ -24,6 +24,9 @@
                 <Button Margin="10,0" Height="60" Width="60" Click="Button_Click_1">
                     <Image Source="/Vista/settings.ico"/>
                 </Button>
+                <Button Margin="10,0" Height="60" Width="60" Click="Button_Click_1">
+                    <Image Source="/Vista/settings.ico"/>
+                </Button>
             </StackPanel>
             <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
         </Grid>
