@@ -18,3 +18,23 @@ C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSt
 C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.dll
 C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.pdb
 C:\codigoDI\DI-UT3-Trabajo\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.genruntimeconfig.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.exe
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.deps.json
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.runtimeconfig.json
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.runtimeconfig.dev.json
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\bin\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.pdb
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.csproj.AssemblyReference.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\App.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion_MarkupCompile.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion_MarkupCompile.lref
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.g.resources
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.AssemblyInfoInputs.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.AssemblyInfo.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.csproj.CoreCompileInputs.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.pdb
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito - Formulario Insercion\ProyectoSteamVinito - Formulario Insercion\obj\Debug\netcoreapp3.1\ProyectoSteamVinito - Formulario Insercion.genruntimeconfig.cache
