@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "U+uCuZk1RlQQc+U4fXC7VUWreOEsVTGh1t+meXDDqIpPb7akb1WiewCeF4ipB9YpcU6QQwMoCfmJ44mE6W5B/g==",
+  "dgSpecHash": "xgFjw7T8ofczBE5/WJwNfAaFiCnEDWtz2buw3j+9W9xS56jgZgoI4nDGEOgsWxRj/DmRiMxYI9hdqW1sQ0SBlA==",
   "success": true,
-  "projectFilePath": "D:\\DAM2\\DI\\codigoDI\\ProyectoVino\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion\\ProyectoSteamVinito - Formulario Insercion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felix\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Felix\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
