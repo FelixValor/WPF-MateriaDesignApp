@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoSteamVinito.Vista;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace ProyectoSteamVinito
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Visibility = Visibility.Hidden;
+            Inicio inicio = new Inicio(this);
+            inicio.ShowDialog();
         }
     }
 }
