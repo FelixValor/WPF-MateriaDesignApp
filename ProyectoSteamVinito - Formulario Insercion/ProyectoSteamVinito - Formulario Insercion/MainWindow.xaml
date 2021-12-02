@@ -5,8 +5,86 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoSteamVinito___Formulario_Insercion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" SizeChanged="Window_SizeChanged">
     <Grid>
-
+        <Grid x:Name="VistaTabular">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Formulario de Inserción de Registros" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Fecha:" Grid.Row="1" Grid.Column="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Grupo:" Grid.Row="1" Grid.Column="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Localización:" Grid.Row="1" Grid.Column="5" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Objetivo:" Grid.Row="1" Grid.Column="7" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <DatePicker x:Name="dtpFecha" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=txtDNIC,Path=Text}"/>
+                <ComboBox x:Name="cmbGrupo" Grid.Row="2" Grid.Column="3" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=txtNombreC,Path=Text}"/>
+                <ComboBox x:Name="cmbLocalizacion" Grid.Row="2" Grid.Column="5" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=txtApellidosC,Path=Text}"/>
+                <ComboBox x:Name="cmbObjetivo" Grid.Row="2" Grid.Column="7" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <TextBlock Text="Operación:" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cmbOperacion" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=txtEmailC,Path=Text}"/>
+                <TextBlock Text="Equipo:" Grid.Row="6" Grid.Column="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cmbEquipo" Grid.Row="6" Grid.Column="3" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=txtTelefonoC,Path=Text}"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="VistaColumnas">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Formulario de Inserción de Registros" Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Fecha:" Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Grupo:" Grid.Row="4" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Localización:" Grid.Row="6" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Objetivo:" Grid.Row="8" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Operación:" Grid.Row="10" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Equipo:" Grid.Row="12" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <DatePicker x:Name="cmbFecha2" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtDNI,Path=Text}"/>
+            <ComboBox x:Name="cmbGrupo2" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtNombre,Path=Text}"/>
+            <ComboBox x:Name="cmbLocalizacion2" Grid.Row="6" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtApellidos,Path=Text}"/>
+            <ComboBox x:Name="cmbObjetivo2" Grid.Row="8" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=cmbCurso,Path=SelectedValue}"/>
+            <ComboBox x:Name="cmbOperacion2" Grid.Row="10" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtEmail,Path=Text}"/>
+            <ComboBox x:Name="cmbEquipo2" Grid.Row="12" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtTelefono,Path=Text}"/>
+        </Grid>
     </Grid>
 </Window>
