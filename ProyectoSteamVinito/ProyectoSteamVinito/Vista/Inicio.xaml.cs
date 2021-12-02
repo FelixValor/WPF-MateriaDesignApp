@@ -31,12 +31,20 @@ namespace ProyectoSteamVinito.Vista
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            vistaAjustes.Visibility = Visibility.Collapsed;
+            vistaPrincipal.Visibility = Visibility.Visible;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            vistaAjustes.Visibility = Visibility.Visible;
+            vistaPrincipal.Visibility = Visibility.Collapsed;
+        }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            vistaPrincipal.Visibility = Visibility.Visible;
+            vistaAjustes.Visibility = Visibility.Collapsed;
         }
     }
 }

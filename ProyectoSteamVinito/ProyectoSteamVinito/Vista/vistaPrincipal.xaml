@@ -28,7 +28,7 @@
             <StackPanel Orientation="Horizontal" Grid.Row="1">
                 <TextBlock Text="Grupo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox VerticalAlignment="Center" Width="100"/>
-                <TextBlock Text="Local: " VerticalAlignment="Center" Margin="10,0"/>
+                <TextBlock Text="Localidad: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox VerticalAlignment="Center" Width="100"/>
             </StackPanel>
             <DataGrid Grid.Row="2" VerticalAlignment="Center" Margin="10,0"  d:ItemsSource="{d:SampleData ItemCount=5}"/>

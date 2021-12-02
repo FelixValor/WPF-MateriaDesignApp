@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Vista\Ajustes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vista\Inicio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,6 +18,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Vista\Ajustes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Vista\Inicio.xaml">
       <SubType>Designer</SubType>
     </Page>

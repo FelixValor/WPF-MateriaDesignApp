@@ -81,3 +81,9 @@ C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\Pro
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CopyComplete
