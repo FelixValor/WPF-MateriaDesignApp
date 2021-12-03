@@ -40,10 +40,11 @@ namespace ProyectoSteamVinito.Vista
             pantallaCarga.Visibility = Visibility.Visible;
         }
 
-        private void bton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             botoneraSuperior.Visibility = Visibility.Visible;
             vistaPrincipal.Visibility = Visibility.Visible;
+            bton.Visibility = Visibility.Collapsed;
             vistaAjustes.Visibility = Visibility.Collapsed;
             pantallaCarga.Visibility = Visibility.Collapsed;
         }

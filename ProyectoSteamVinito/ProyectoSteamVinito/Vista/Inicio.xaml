@@ -12,21 +12,21 @@
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid>
+        <Button Click="Button_Click_2" x:Name="bton" Width="40" Cursor="Hand"/>
+        <Grid x:Name="botoneraSuperior">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <StackPanel Orientation="Horizontal" x:Name="botoneraSuperior">
-                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Icon"
+            <StackPanel Orientation="Horizontal">
+                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Inicio"
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
                 </Button>
-                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=CutleryClean, Size=50}" ToolTip="Icon"
+                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Settings, Size=50}" ToolTip="Ajustes"
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
                 </Button>
             </StackPanel>
-            <Button x:Name="bton" Grid.Column="1" Width="40" Click="bton_Click"/>
             <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
         </Grid>
             <local:vistaPrincipal x:Name="vistaPrincipal" Grid.Row="1"/>

@@ -8,44 +8,48 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition  MaxWidth="200" MinWidth="75" Width="*" />
+            <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Vertical">
-            <Button Margin="10,10" Padding="0">
-                <StackPanel Orientation="Horizontal" Width="130">
-                    <materialDesign:PackIcon Kind="AccountGroup" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
-                    <TextBlock VerticalAlignment="Center">Grupos</TextBlock>
-                </StackPanel>
-            </Button>
-            <Button Margin="10,10" Padding="0" >
-                <StackPanel Orientation="Horizontal" Width="130">
-                    <materialDesign:PackIcon Kind="MapMarkerRadius" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
-                    <TextBlock VerticalAlignment="Center">Localizacion</TextBlock>
-                </StackPanel>
-            </Button>
+        <Grid>
+            <StackPanel Orientation="Vertical">
+                <Button Margin="10,10" Padding="0">
+                    <StackPanel Orientation="Horizontal" Width="130">
+                        <materialDesign:PackIcon Kind="AccountGroup" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                        <TextBlock VerticalAlignment="Center">Grupos</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Margin="10,10" Padding="0" >
+                    <StackPanel Orientation="Horizontal" Width="130">
+                        <materialDesign:PackIcon Kind="MapMarkerRadius" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                        <TextBlock VerticalAlignment="Center">Localizacion</TextBlock>
+                    </StackPanel>
+                </Button>
 
-            <Button Margin="10,10" Padding="0">
-                <StackPanel Orientation="Horizontal" Width="130">
-                    <materialDesign:PackIcon Kind="Toolbox" Margin="0,0,10,0" Height="30" Width="30" Padding="0" HorizontalAlignment="Left"/>
-                    <TextBlock VerticalAlignment="Center">Equipo</TextBlock>
-                </StackPanel>
-            </Button>
+                <Button Margin="10,10" Padding="0">
+                    <StackPanel Orientation="Horizontal" Width="130">
+                        <materialDesign:PackIcon Kind="Toolbox" Margin="0,0,10,0" Height="30" Width="30" Padding="0" HorizontalAlignment="Left"/>
+                        <TextBlock VerticalAlignment="Center">Equipo</TextBlock>
+                    </StackPanel>
+                </Button>
 
-            <Button Margin="10,10" Padding="0">
-                <StackPanel Orientation="Horizontal" Width="130">
-                    <materialDesign:PackIcon Kind="Tools" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
-                    <TextBlock VerticalAlignment="Center">Operacion</TextBlock>
-                </StackPanel>
-            </Button>
-            <Button Margin="10,10" Padding="0">
-                <StackPanel Orientation="Horizontal" Width="130">
-                    <materialDesign:PackIcon Kind="Target" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
-                    <TextBlock VerticalAlignment="Center">Objetivo</TextBlock>
-                </StackPanel>
-            </Button>
-        </StackPanel>
-        <Grid Grid.Column="1">
+                <Button Margin="10,10" Padding="0">
+                    <StackPanel Orientation="Horizontal" Width="130">
+                        <materialDesign:PackIcon Kind="Tools" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                        <TextBlock VerticalAlignment="Center">Operacion</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Margin="10,10" Padding="0">
+                    <StackPanel Orientation="Horizontal" Width="130">
+                        <materialDesign:PackIcon Kind="Target" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                        <TextBlock VerticalAlignment="Center">Objetivo</TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"/>
+        <Grid Grid.Column="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition />
