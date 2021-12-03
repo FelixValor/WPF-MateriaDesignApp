@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace ProyectoSteamVinito.Vista
 {
@@ -17,16 +9,15 @@ namespace ProyectoSteamVinito.Vista
     /// </summary>
     public partial class Inicio : Window
     {
-        MainWindow mw;
-        public Inicio(MainWindow mw)
+        public Inicio()
         {
             InitializeComponent();
-            this.mw = mw;
+
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            mw.Close();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,8 +34,18 @@ namespace ProyectoSteamVinito.Vista
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            botoneraSuperior.Visibility = Visibility.Collapsed;
+            vistaPrincipal.Visibility = Visibility.Collapsed;
+            vistaAjustes.Visibility = Visibility.Collapsed;
+            pantallaCarga.Visibility = Visibility.Visible;
+        }
+
+        private void bton_Click(object sender, RoutedEventArgs e)
+        {
+            botoneraSuperior.Visibility = Visibility.Visible;
             vistaPrincipal.Visibility = Visibility.Visible;
             vistaAjustes.Visibility = Visibility.Collapsed;
+            pantallaCarga.Visibility = Visibility.Collapsed;
         }
     }
 }

@@ -13,6 +13,9 @@
     <Compile Update="Vista\Inicio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vista\PantallaCarga.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vista\vistaPrincipal.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -24,7 +27,7 @@
     <Page Update="Vista\Inicio.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vista\MainWindow.xaml">
+    <Page Update="Vista\PantallaCarga.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vista\vistaPrincipal.xaml">

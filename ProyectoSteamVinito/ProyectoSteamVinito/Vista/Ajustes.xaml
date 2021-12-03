@@ -16,7 +16,16 @@
                 <Button.Content>Grupos</Button.Content>
             </Button>
             <Button Margin="10,10">
-                <Button.Content>Localidad</Button.Content>
+                <Button.Content>Localizacion</Button.Content>
+            </Button>
+            <Button Margin="10,10">
+                <Button.Content>Equipo</Button.Content>
+            </Button>
+            <Button Margin="10,10">
+                <Button.Content>Operacion</Button.Content>
+            </Button>
+            <Button Margin="10,10">
+                <Button.Content>Objetivo</Button.Content>
             </Button>
         </StackPanel>
         <Grid Grid.Column="1">
