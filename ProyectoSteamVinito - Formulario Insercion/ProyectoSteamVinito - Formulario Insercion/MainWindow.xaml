@@ -87,14 +87,16 @@
             <TextBlock Text="Objetivo:" Grid.Row="8" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
             <TextBlock Text="Operación:" Grid.Row="10" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
             <TextBlock Text="Equipo:" Grid.Row="12" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-            <DatePicker x:Name="cmbFecha2" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtDNI,Path=Text}"/>
+            <Label  x:Name="lblFecha2" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0"/>
+
+            <!--<DatePicker x:Name="cmbFecha2" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtDNI,Path=Text}"/>-->
             <ComboBox x:Name="cmbGrupo2" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtNombre,Path=Text}"/>
             <ComboBox x:Name="cmbLocalizacion2" Grid.Row="6" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtApellidos,Path=Text}"/>
             <ComboBox x:Name="cmbObjetivo2" Grid.Row="8" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=cmbCurso,Path=SelectedValue}"/>
             <ComboBox x:Name="cmbOperacion2" Grid.Row="10" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtEmail,Path=Text}"/>
             <ComboBox x:Name="cmbEquipo2" Grid.Row="12" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text="{Binding ElementName=txtTelefono,Path=Text}"/>
-            <Button  x:Name="btnEnviar2" Content="Enviar" Grid.Row="14" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="100" />
-            <Button  x:Name="btnLimpiar2" Content="Limpiar"  Grid.Row="14" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="100" />
+            <Button  x:Name="btnEnviar2" Content="Enviar" Grid.Row="14" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="100" Cursor="Hand" />
+            <Button  x:Name="btnLimpiar2" Content="Limpiar"  Grid.Row="14" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="100" />
 
         </Grid>
     </Grid>
