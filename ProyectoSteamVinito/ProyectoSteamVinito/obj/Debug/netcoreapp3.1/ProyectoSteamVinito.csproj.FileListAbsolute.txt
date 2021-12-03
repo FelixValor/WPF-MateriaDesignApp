@@ -60,7 +60,6 @@ C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\Pro
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
-C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\MainWindow.g.cs
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
@@ -68,7 +67,6 @@ C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\Pro
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.lref
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
-C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\MainWindow.baml
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.g.resources
 C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.GeneratedMSBuildEditorConfig.editorconfig
@@ -87,3 +85,7 @@ C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoS
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CopyComplete
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.baml

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "6RrJQdll1xJ0t+7GImyz1+1MDhGkp+SbmRo5vH+ayyZY2ZSz4HH/5nhVJz7DYUOdBvr9LmtvS9tgZRFQMQGykQ==",
+  "dgSpecHash": "KThXyusKooNx1K90q0Bu1H6/ACJDd9j0qEx61dVTyrN47enA/6yczvevm/AO8f59k/c/fLFmDhDA1FLMtZMKow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+  "projectFilePath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mario\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
-    "C:\\Users\\Mario\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
+    "C:\\Users\\Felix\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Felix\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
