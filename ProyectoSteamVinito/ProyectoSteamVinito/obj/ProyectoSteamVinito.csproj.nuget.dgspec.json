@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {}
+    "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {
+    "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+        "projectUniqueName": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
         "projectName": "ProyectoSteamVinito",
-        "projectPath": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
-        "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\obj\\",
+        "projectPath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+        "packagesPath": "C:\\Users\\Felix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felix\\Desktop\\DAM2\\DI\\Proyecto Vinito (Pruebas)\\ProyectoSteamVinito\\ProyectoSteamVinito\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Felix\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -69,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

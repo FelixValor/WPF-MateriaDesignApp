@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ProyectoSteamVinito.Vista"
+             xmlns:local="clr-namespace:ProyectoSteamVinito.Vista" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -12,20 +12,37 @@
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Vertical">
-            <Button Margin="10,10">
-                <Button.Content>Grupos</Button.Content>
+            <Button Margin="10,10" Padding="0">
+                <StackPanel Orientation="Horizontal" Width="130">
+                    <materialDesign:PackIcon Kind="AccountGroup" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                    <TextBlock VerticalAlignment="Center">Grupos</TextBlock>
+                </StackPanel>
             </Button>
-            <Button Margin="10,10">
-                <Button.Content>Localizacion</Button.Content>
+            <Button Margin="10,10" Padding="0" >
+                <StackPanel Orientation="Horizontal" Width="130">
+                    <materialDesign:PackIcon Kind="MapMarkerRadius" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                    <TextBlock VerticalAlignment="Center">Localizacion</TextBlock>
+                </StackPanel>
             </Button>
-            <Button Margin="10,10">
-                <Button.Content>Equipo</Button.Content>
+
+            <Button Margin="10,10" Padding="0">
+                <StackPanel Orientation="Horizontal" Width="130">
+                    <materialDesign:PackIcon Kind="Toolbox" Margin="0,0,10,0" Height="30" Width="30" Padding="0" HorizontalAlignment="Left"/>
+                    <TextBlock VerticalAlignment="Center">Equipo</TextBlock>
+                </StackPanel>
             </Button>
-            <Button Margin="10,10">
-                <Button.Content>Operacion</Button.Content>
+
+            <Button Margin="10,10" Padding="0">
+                <StackPanel Orientation="Horizontal" Width="130">
+                    <materialDesign:PackIcon Kind="Tools" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                    <TextBlock VerticalAlignment="Center">Operacion</TextBlock>
+                </StackPanel>
             </Button>
-            <Button Margin="10,10">
-                <Button.Content>Objetivo</Button.Content>
+            <Button Margin="10,10" Padding="0">
+                <StackPanel Orientation="Horizontal" Width="130">
+                    <materialDesign:PackIcon Kind="Target" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
+                    <TextBlock VerticalAlignment="Center">Objetivo</TextBlock>
+                </StackPanel>
             </Button>
         </StackPanel>
         <Grid Grid.Column="1">
@@ -46,6 +63,7 @@
                     <Button.Content>Añadir</Button.Content>
                 </Button>
                 <Button Margin="10,10">
+                    
                     <Button.Content>Modificar</Button.Content>
                 </Button>
                 <Button Margin="10,10">

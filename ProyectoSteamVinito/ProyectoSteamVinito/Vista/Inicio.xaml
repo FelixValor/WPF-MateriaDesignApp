@@ -22,7 +22,7 @@
                 <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Icon"
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
                 </Button>
-                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Cog, Size=50}" ToolTip="Icon"
+                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=CutleryClean, Size=50}" ToolTip="Icon"
                 IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
                 </Button>
             </StackPanel>
