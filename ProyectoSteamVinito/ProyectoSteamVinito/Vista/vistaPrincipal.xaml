@@ -23,12 +23,16 @@
                 <DatePicker VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
                 <TextBlock Text="Fecha Final: " VerticalAlignment="Center" Margin="10,0"/>
                 <DatePicker VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
+                <TextBlock Text="Equipo: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox VerticalAlignment="Center" Width="100"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1">
                 <TextBlock Text="Grupo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox VerticalAlignment="Center" Width="100"/>
-                <TextBlock Text="Localidad: " VerticalAlignment="Center" Margin="10,0"/>
+                <TextBlock Text="Localizacion: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox VerticalAlignment="Center" Width="100"/>
+                <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox VerticalAlignment="Center" Width="100"/>
             </StackPanel>
             <DataGrid Grid.Row="2" VerticalAlignment="Center" Margin="10,0"  d:ItemsSource="{d:SampleData ItemCount=5}"/>
