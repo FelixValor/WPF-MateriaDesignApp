@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ProyectoSteamVinito.Modelo
 {
-    public class ModeloObjetivo : INotifyPropertyChanged
+    public class ModeloLocalizacion : INotifyPropertyChanged
     {
 
         private string id, nombre;
