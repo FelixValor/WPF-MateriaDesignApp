@@ -22,5 +22,43 @@ namespace ProyectoSteamVinito.Vista
         {
             InitializeComponent();
         }
+
+        private void Grid_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (e.NewSize.Width <= 140)
+            {
+                btnGrupos_Large.Visibility = Visibility.Collapsed;
+                btnGrupos_Short.Visibility = Visibility.Visible;
+
+                btnLoc_Large.Visibility = Visibility.Collapsed;
+                btnLoc_Short.Visibility = Visibility.Visible;
+
+                btnEquipo_Large.Visibility = Visibility.Collapsed;
+                btnEquipo_Short.Visibility = Visibility.Visible;
+
+                btnObjetivo_Large.Visibility = Visibility.Collapsed;
+                btnObjetivo_Short.Visibility = Visibility.Visible;
+
+                btnOperacion_Large.Visibility = Visibility.Collapsed;
+                btnOperacion_Short.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnGrupos_Large.Visibility = Visibility.Visible;
+                btnGrupos_Short.Visibility = Visibility.Collapsed;
+
+                btnLoc_Large.Visibility = Visibility.Visible;
+                btnLoc_Short.Visibility = Visibility.Collapsed;
+
+                btnEquipo_Large.Visibility = Visibility.Visible;
+                btnEquipo_Short.Visibility = Visibility.Collapsed;
+
+                btnObjetivo_Large.Visibility = Visibility.Visible;
+                btnObjetivo_Short.Visibility = Visibility.Collapsed;
+
+                btnOperacion_Large.Visibility = Visibility.Visible;
+                btnOperacion_Short.Visibility = Visibility.Collapsed;
+            }
+        }
     }
 }

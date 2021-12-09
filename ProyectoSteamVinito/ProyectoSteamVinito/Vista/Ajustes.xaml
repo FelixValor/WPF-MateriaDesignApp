@@ -12,43 +12,66 @@
             <ColumnDefinition Width="5"/>
             <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <Grid>
+        <Grid SizeChanged="Grid_SizeChanged">
             <StackPanel Orientation="Vertical">
-                <Button Margin="10,10" Padding="0">
+                <!--Boton Grupos-->
+                <Button Margin="10,10" Padding="0" x:Name="btnGrupos_Large">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="AccountGroup" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Grupos</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0" >
+                <Button Margin="10,10" Padding="0" x:Name="btnGrupos_Short"  Visibility="Collapsed" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="AccountGroup" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
+                </Button>
+
+                <!--Boton Localizacion-->
+                <Button Margin="10,10" Padding="0"  x:Name="btnLoc_Large">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="MapMarkerRadius" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Localizacion</TextBlock>
                     </StackPanel>
                 </Button>
+                <Button Margin="10,10" Padding="0" x:Name="btnLoc_Short"  Visibility="Collapsed" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="MapMarkerRadius" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
+                </Button>
 
-                <Button Margin="10,10" Padding="0">
+                <!--Boton Equipo-->
+                <Button Margin="10,10" Padding="0" x:Name="btnEquipo_Large">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="Toolbox" Margin="0,0,10,0" Height="30" Width="30" Padding="0" HorizontalAlignment="Left"/>
                         <TextBlock VerticalAlignment="Center">Equipo</TextBlock>
                     </StackPanel>
                 </Button>
+                <Button Margin="10,10" Padding="0" x:Name="btnEquipo_Short"  Visibility="Collapsed" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="Toolbox" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
+                </Button>
 
-                <Button Margin="10,10" Padding="0">
+                <!--Boton Operacion-->
+                <Button Margin="10,10" Padding="0" x:Name="btnOperacion_Large">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="Tools" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Operacion</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0">
+                <Button Margin="10,10" Padding="0" x:Name="btnOperacion_Short"  Visibility="Collapsed" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="Tools" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
+                </Button>
+
+                <!--Boton Objetivo-->
+                <Button Margin="10,10" Padding="0" x:Name="btnObjetivo_Large">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="Target" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Objetivo</TextBlock>
                     </StackPanel>
                 </Button>
+                <Button Margin="10,10" Padding="0" x:Name="btnObjetivo_Short"  Visibility="Collapsed" Cursor="Hand">
+                    <materialDesign:PackIcon Kind="Target" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
+                </Button>
             </StackPanel>
         </Grid>
         <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch"/>
+        
         <Grid Grid.Column="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
