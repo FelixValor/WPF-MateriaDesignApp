@@ -6,6 +6,6 @@ namespace ProyectoSteamVinito.VistaModelo
 {
     internal class VistaModeloVistaPrincipal
     {
-
+        
     }
 }
