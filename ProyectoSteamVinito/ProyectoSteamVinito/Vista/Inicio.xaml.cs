@@ -12,7 +12,6 @@ namespace ProyectoSteamVinito.Vista
         public Inicio()
         {
             InitializeComponent();
-
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -24,12 +23,14 @@ namespace ProyectoSteamVinito.Vista
         {
             vistaAjustes.Visibility = Visibility.Collapsed;
             vistaPrincipal.Visibility = Visibility.Visible;
+            Title = "Proyecto Vinito -- Inicio";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             vistaAjustes.Visibility = Visibility.Visible;
             vistaPrincipal.Visibility = Visibility.Collapsed;
+            Title = "Proyecto Vinito -- Ajustes";
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
