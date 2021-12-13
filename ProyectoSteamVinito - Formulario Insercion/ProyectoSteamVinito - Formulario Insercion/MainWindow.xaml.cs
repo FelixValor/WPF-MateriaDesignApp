@@ -144,7 +144,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
                 //Crearemos la cadena de conexión concatenando las variables
                 string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
 
-                //Instancia para conexión a MySQL, recibe la cadena de conexión
+                //Instancia para conexión a MySQL, recibe la cadena de conexiónn
                 MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
                 MySqlDataReader reader = null; //Variable para leer el resultado de la consulta
 
