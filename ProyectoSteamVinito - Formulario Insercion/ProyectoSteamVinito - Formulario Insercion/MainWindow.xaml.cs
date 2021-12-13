@@ -23,23 +23,23 @@ namespace ProyectoSteamVinito___Formulario_Insercion
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static string servidor = "localhost"; //Nombre o ip del servidor de MySQL
+        private string bd = "bodega"; //Nombre de la base de datos
+        private string usuario = "root"; //Usuario de acceso a MySQL
+        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
+        private string datos = null; //Variable para almacenar el resultado
+
         public MainWindow()
         {
             InitializeComponent();
+            //btnEnviar.IsEnabled = false;
+            //btnEnviar2.IsEnabled = false;
 
             //SACAR FECHA Y HORA ACTUALIZADA
             DispatcherTimer timer = new DispatcherTimer();
             timer.Tick += new EventHandler(UpdateTimer_Tick);
             timer.Interval = new TimeSpan(0, 0, 1);
             timer.Start();
-
-
-            //CONEXION BASE DE DATOS
-            string servidor = "localhost"; //Nombre o ip del servidor de MySQL
-            string bd = "bodega"; //Nombre de la base de datos
-            string usuario = "root"; //Usuario de acceso a MySQL
-            string password = "inves"; //Contraseña de usuario de acceso a MySQL
-            string datos = null; //Variable para almacenar el resultado
 
             //Crearemos la cadena de conexión concatenando las variables
             string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
@@ -52,25 +52,24 @@ namespace ProyectoSteamVinito___Formulario_Insercion
             try
             {
                 
-                CompletarCMB("select nombre from equipo", cmbEquipo, cmbEquipo2, conexionBD, reader, datos);//SACAMOS LOS EQUIPOS
-                CompletarCMB("select nombre from grupo", cmbGrupo, cmbGrupo2, conexionBD, reader, datos);//SACAMOS LOS GRUPOS
-                CompletarCMB("select nombre from localizacion", cmbLocalizacion, cmbLocalizacion2, conexionBD, reader, datos);//SACAMOS LAS LOCALIZACIONES
-                CompletarCMB("select nombre from objetivo", cmbObjetivo, cmbObjetivo2, conexionBD, reader, datos);//SACAMOS LOS OBJETIVOS
-                CompletarCMB("select nombre from operacion", cmbOperacion, cmbOperacion2, conexionBD, reader, datos);//SACAMOS LAS OPERACIONES
+                CompletarCMB("select id_equipo, nombre from equipo", cmbEquipo, cmbEquipo2, conexionBD, reader, datos);//SACAMOS LOS EQUIPOS
+                CompletarCMB("select id_grupo, nombre from grupo", cmbGrupo, cmbGrupo2, conexionBD, reader, datos);//SACAMOS LOS GRUPOS
+                CompletarCMB("select id_localizacion, nombre from localizacion", cmbLocalizacion, cmbLocalizacion2, conexionBD, reader, datos);//SACAMOS LAS LOCALIZACIONES
+                CompletarCMB("select id_objetivo, nombre from objetivo", cmbObjetivo, cmbObjetivo2, conexionBD, reader, datos);//SACAMOS LOS OBJETIVOS
+                CompletarCMB("select id_operacion, nombre from operacion", cmbOperacion, cmbOperacion2, conexionBD, reader, datos);//SACAMOS LAS OPERACIONES
 
                 //MessageBox.Show(datos); //Imprime en cuadro de dialogo el resultado
             }
             catch (MySqlException ex)
             {
-                //MessageBox.Show(ex.Message); //Si existe un error aquí muestra el mensaje
+                MessageBox.Show(ex.Message); //Si existe un error aquí muestra el mensaje
             }
             finally
             {
                 conexionBD.Close(); //Cierra la conexión a MySQL
             }
 
-
-
+           
         }
 
 
@@ -106,11 +105,74 @@ namespace ProyectoSteamVinito___Formulario_Insercion
 
             while (reader.Read()) //Avanza MySqlDataReader al siguiente registro
             {
-                datos += reader.GetString(0) + "\n"; //Almacena cada registro con un salto de linea
-                combo.Items.Add(reader.GetString(0) + "\n");
-                combo2.Items.Add(reader.GetString(0) + "\n");
+                datos += reader.GetString(0)+ reader.GetString(1) + "\n"; //Almacena cada registro con un salto de linea
+                Elemento elemento = new Elemento();
+                combo.Items.Add(reader.GetString(0) + reader.GetString(1) + "\n");
+                combo2.Items.Add(reader.GetString(0) + reader.GetString(1) + "\n");
             }
             conexionBD.Close();
+        }
+
+        private void btnLimpiar2_Click(object sender, RoutedEventArgs e)
+        {
+            cmbEquipo2.SelectedIndex = -1;
+            cmbGrupo2.SelectedIndex = -1;
+            cmbLocalizacion2.SelectedIndex = -1;
+            cmbObjetivo2.SelectedIndex = -1;
+            cmbOperacion2.SelectedIndex = -1;
+        }
+
+        private void btnLimpiar_Click(object sender, RoutedEventArgs e)
+        {
+            cmbEquipo.SelectedIndex=-1;
+            cmbGrupo.SelectedIndex = -1;
+            cmbLocalizacion.SelectedIndex = -1;
+            cmbObjetivo.SelectedIndex = -1;
+            cmbOperacion.SelectedIndex = -1;
+
+
+        }
+
+        private void btnEnviar_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbEquipo.SelectedIndex==-1 || cmbGrupo.SelectedIndex == -1 || cmbLocalizacion.SelectedIndex == -1 || cmbObjetivo.SelectedIndex == -1 || cmbOperacion.SelectedIndex == -1)
+            {
+                MessageBox.Show("Completa todos los campos por favor", "Atención",  MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                //Crearemos la cadena de conexión concatenando las variables
+                string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
+
+                //Instancia para conexión a MySQL, recibe la cadena de conexión
+                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+                MySqlDataReader reader = null; //Variable para leer el resultado de la consulta
+
+                
+
+                //string equipos = "select nombre from equipo"; //Consulta a MySQL (Muestra las bases de datos que tiene el servidor)
+                //String consulta = "insert into registro (id_grupo, id_localizacion, id_objetivo, id_operacion, id_equipo) values (" + grupo + "," + cmbLocalizacion.SelectedValue +  "," + cmbObjetivo.SelectedValue + "," +  cmbOperacion.SelectedValue + ","  + cmbEquipo.SelectedValue + ");";
+                //MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                //comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+                conexionBD.Open(); //Abre la conexión
+
+                //comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
+
+                
+                conexionBD.Close();
+            }
+        }
+
+        private void btnEnviar2_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbEquipo2.SelectedIndex == -1 || cmbGrupo2.SelectedIndex == -1 || cmbLocalizacion2.SelectedIndex == -1 || cmbObjetivo2.SelectedIndex == -1 || cmbOperacion2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Completa todos los campos por favor", "Atención", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+
+            }
         }
     }
 }
