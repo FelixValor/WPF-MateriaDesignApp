@@ -107,8 +107,10 @@ namespace ProyectoSteamVinito___Formulario_Insercion
             {
                 datos += reader.GetString(0)+ reader.GetString(1) + "\n"; //Almacena cada registro con un salto de linea
                 Elemento elemento = new Elemento();
-                combo.Items.Add(reader.GetString(0) + reader.GetString(1) + "\n");
-                combo2.Items.Add(reader.GetString(0) + reader.GetString(1) + "\n");
+                elemento.Id = int.Parse(reader.GetString(0));
+                elemento.Nombre = reader.GetString(1);
+                combo.Items.Add(elemento);
+                combo2.Items.Add(elemento);
             }
             conexionBD.Close();
         }
@@ -151,15 +153,17 @@ namespace ProyectoSteamVinito___Formulario_Insercion
                 
 
                 //string equipos = "select nombre from equipo"; //Consulta a MySQL (Muestra las bases de datos que tiene el servidor)
-                //String consulta = "insert into registro (id_grupo, id_localizacion, id_objetivo, id_operacion, id_equipo) values (" + grupo + "," + cmbLocalizacion.SelectedValue +  "," + cmbObjetivo.SelectedValue + "," +  cmbOperacion.SelectedValue + ","  + cmbEquipo.SelectedValue + ");";
-                //MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
-                //comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+                String consulta = "insert into registro (id_grupo, id_localizacion, id_objetivo, id_operacion, id_equipo) values (" + ((Elemento)cmbGrupo.SelectedItem).Id + "," + ((Elemento)cmbLocalizacion.SelectedItem).Id +  "," + ((Elemento)cmbObjetivo.SelectedItem).Id + "," + ((Elemento)cmbOperacion.SelectedItem).Id + ","  + ((Elemento)cmbEquipo.SelectedItem).Id + ");";
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                 conexionBD.Open(); //Abre la conexión
 
-                //comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
+                comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
 
                 
                 conexionBD.Close();
+                btnLimpiar_Click(sender, e);
+
             }
         }
 
@@ -171,7 +175,26 @@ namespace ProyectoSteamVinito___Formulario_Insercion
             }
             else
             {
+                //Crearemos la cadena de conexión concatenando las variables
+                string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
 
+                //Instancia para conexión a MySQL, recibe la cadena de conexiónn
+                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+                MySqlDataReader reader = null; //Variable para leer el resultado de la consulta
+
+
+
+                //string equipos = "select nombre from equipo"; //Consulta a MySQL (Muestra las bases de datos que tiene el servidor)
+                String consulta = "insert into registro (id_grupo, id_localizacion, id_objetivo, id_operacion, id_equipo) values (" + ((Elemento)cmbGrupo.SelectedItem).Id + "," + ((Elemento)cmbLocalizacion.SelectedItem).Id + "," + ((Elemento)cmbObjetivo.SelectedItem).Id + "," + ((Elemento)cmbOperacion.SelectedItem).Id + "," + ((Elemento)cmbEquipo.SelectedItem).Id + ");";
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+                conexionBD.Open(); //Abre la conexión
+
+                comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
+
+
+                conexionBD.Close();
+                btnLimpiar2_Click(sender, e);
             }
         }
     }
