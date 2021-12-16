@@ -40,5 +40,10 @@ namespace ProyectoSteamVinito.Modelo
                 }
             }
         }
+
+        public override string ToString()
+        {
+            return nombre;
+        }
     }
 }

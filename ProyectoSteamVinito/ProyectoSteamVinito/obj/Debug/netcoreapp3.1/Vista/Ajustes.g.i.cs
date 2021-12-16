@@ -136,7 +136,7 @@ namespace ProyectoSteamVinito.Vista {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ProyectoSteamVinito;V1.0.0.0;component/vista/ajustes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProyectoSteamVinito;component/vista/ajustes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vista\Ajustes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

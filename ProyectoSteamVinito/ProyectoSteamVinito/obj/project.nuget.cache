@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oSzbn6mIAXfFhvgiOQfz11rcK9AAj1k3gWM2iT0CCgb4/yEeQVViCCmC3hBPGkzFZgH/CR7j3ypL6U5VL9s8EQ==",
+  "dgSpecHash": "oQCZygehh4PhqgH/NbXEjJR8NbH4z8zIatiBOW7ziKcmck6cFmxCaZRAdFXTum2zC6Lj/FaL7w5pNdmCyowR8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,8 @@
     "C:\\Users\\Mario\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Mario\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Mario\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
-    "C:\\Users\\Mario\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\Mario\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Mario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
 }

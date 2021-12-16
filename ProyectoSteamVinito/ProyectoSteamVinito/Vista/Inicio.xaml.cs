@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using ProyectoSteamVinito.VistaModelo;
+using System;
 using System.Windows;
 
 
@@ -9,9 +11,26 @@ namespace ProyectoSteamVinito.Vista
     /// </summary>
     public partial class Inicio : Window
     {
+        VistaModeloVistaPrincipal vmvp;
         public Inicio()
         {
             InitializeComponent();
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            botoneraSuperior.Visibility = Visibility.Collapsed;
+            vistaPrincipal.Visibility = Visibility.Collapsed;
+            vistaAjustes.Visibility = Visibility.Collapsed;
+            pantallaCarga.Visibility = Visibility.Visible;
+
+            vmvp = new VistaModeloVistaPrincipal();
+            vmvp.CargarRegistros();
+            vmvp.CargarEquipos();
+            vmvp.CargarGrupos();
+            vmvp.CargarLocalizaciones();
+            vmvp.CargarObjetivos();
+            vmvp.CargarOperaciones();
+            vistaPrincipal.DataContext = vmvp;
         }
 
         private void Window_Closed(object sender, EventArgs e)
@@ -33,13 +52,6 @@ namespace ProyectoSteamVinito.Vista
             Title = "Proyecto Vinito -- Ajustes";
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            botoneraSuperior.Visibility = Visibility.Collapsed;
-            vistaPrincipal.Visibility = Visibility.Collapsed;
-            vistaAjustes.Visibility = Visibility.Collapsed;
-            pantallaCarga.Visibility = Visibility.Visible;
-        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {

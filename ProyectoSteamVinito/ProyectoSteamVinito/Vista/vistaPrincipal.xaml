@@ -16,6 +16,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
                 <RowDefinition Height="3*" />
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal">
@@ -24,18 +25,30 @@
                 <TextBlock Text="Fecha Final: " VerticalAlignment="Center" Margin="10,0"/>
                 <DatePicker VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
                 <TextBlock Text="Equipo: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100"/>
+                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Equipos}" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1">
                 <TextBlock Text="Grupo: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100"/>
+                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Grupos}"/>
                 <TextBlock Text="Localizacion: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100"/>
+                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
                 <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100"/>
+                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
             </StackPanel>
-            <DataGrid Grid.Row="2" VerticalAlignment="Center" Margin="10,0"  d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                <TextBlock Text="Operaciones: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
+            </StackPanel>
+            <DataGrid Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Equipos" Width="*" Binding="{Binding PropModeloEquipos, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Grupos" Width="*" Binding="{Binding PropModeloGrupos, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Localizaciones" Width="*" Binding="{Binding PropModeloLocalizaciones, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Objetivos" Width="*" Binding="{Binding PropModeloObjetivos, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Operaciones" Width="*" Binding="{Binding PropModeloOperaciones, Mode=OneWay}"/>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
 
         <Grid Grid.Column="1">
