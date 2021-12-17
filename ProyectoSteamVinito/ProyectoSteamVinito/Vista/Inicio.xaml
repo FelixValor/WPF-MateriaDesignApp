@@ -13,7 +13,6 @@
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Click="Button_Click_2" x:Name="bton" Width="40" Cursor="Hand"/>
         <Grid x:Name="botoneraSuperior">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
