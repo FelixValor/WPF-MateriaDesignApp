@@ -28,6 +28,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
         private string usuario = "root"; //Usuario de acceso a MySQL
         private string password = "inves"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
+        private static Boolean esCarga = true;
 
         public MainWindow()
         {
@@ -69,9 +70,24 @@ namespace ProyectoSteamVinito___Formulario_Insercion
                 conexionBD.Close(); //Cierra la conexión a MySQL
             }
 
-           
+            //Timer para la pantalla de carga
+            var timerPantallaCarga = new System.Timers.Timer();
+            timerPantallaCarga.Elapsed += timer_Tick;
+            timerPantallaCarga.Interval = 3000;
+            timerPantallaCarga.Enabled = true;
+            timerPantallaCarga.Start();
+
         }
 
+        public void timer_Tick(object sender, EventArgs e)
+        {
+            Application.Current.Dispatcher.Invoke(new Action(() =>
+            {
+                VistaTabular.Visibility = Visibility.Visible;
+                PantallaDeCarga.Visibility = Visibility.Collapsed;
+                esCarga = false;
+            }));
+        }
 
         private void UpdateTimer_Tick(object sender, EventArgs e)
         {
@@ -81,16 +97,25 @@ namespace ProyectoSteamVinito___Formulario_Insercion
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            if (e.NewSize.Width <= 500)
+            if (esCarga)
             {
-                VistaColumnas.Visibility = Visibility.Visible;
                 VistaTabular.Visibility = Visibility.Collapsed;
+                VistaColumnas.Visibility = Visibility.Collapsed;
             }
             else
             {
-                VistaColumnas.Visibility = Visibility.Collapsed;
-                VistaTabular.Visibility = Visibility.Visible;
+                if (e.NewSize.Width <= 500)
+                {
+                    VistaColumnas.Visibility = Visibility.Visible;
+                    VistaTabular.Visibility = Visibility.Collapsed;
+                }
+                else
+                {
+                    VistaColumnas.Visibility = Visibility.Collapsed;
+                    VistaTabular.Visibility = Visibility.Visible;
+                }
             }
+            
         }
 
         //FUNCION QUE INSERTA DATOS EN LA BASE DE DATOS
