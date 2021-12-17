@@ -12,7 +12,7 @@ namespace ProyectoSteamVinito.Core
     {
         //CONEXION BASE DE DATOS
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
-        private string bd = "bodega"; //Nombre de la base de datos
+        private string bd = "bodegas"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
         private string password = "admin"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado

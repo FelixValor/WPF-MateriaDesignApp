@@ -1,6 +1,7 @@
 ﻿
 using ProyectoSteamVinito.VistaModelo;
 using System;
+using System.Timers;
 using System.Windows;
 
 
@@ -12,9 +13,31 @@ namespace ProyectoSteamVinito.Vista
     public partial class Inicio : Window
     {
         VistaModeloVistaPrincipal vmvp;
+        private static Boolean esCarga = true;
+        private static Timer timerPantallaCarga = new System.Timers.Timer();
         public Inicio()
         {
             InitializeComponent();
+            //Timer para la pantalla de carga
+           
+                
+            timerPantallaCarga.Elapsed += timer_Tick;
+            timerPantallaCarga.Interval = 3000;
+            timerPantallaCarga.Enabled = true;
+            timerPantallaCarga.Start();
+            
+            
+        }
+        public void timer_Tick(object sender, EventArgs e)
+        {
+            Application.Current.Dispatcher.Invoke(new Action(() =>
+            {
+                botoneraSuperior.Visibility = Visibility.Visible;
+                vistaPrincipal.Visibility = Visibility.Visible;
+                vistaAjustes.Visibility = Visibility.Collapsed;
+                pantallaCarga.Visibility = Visibility.Collapsed;
+                timerPantallaCarga.Stop();
+            }));
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -50,16 +73,6 @@ namespace ProyectoSteamVinito.Vista
             vistaAjustes.Visibility = Visibility.Visible;
             vistaPrincipal.Visibility = Visibility.Collapsed;
             Title = "Proyecto Vinito -- Ajustes";
-        }
-
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            botoneraSuperior.Visibility = Visibility.Visible;
-            vistaPrincipal.Visibility = Visibility.Visible;
-            bton.Visibility = Visibility.Collapsed;
-            vistaAjustes.Visibility = Visibility.Collapsed;
-            pantallaCarga.Visibility = Visibility.Collapsed;
         }
     }
 }
