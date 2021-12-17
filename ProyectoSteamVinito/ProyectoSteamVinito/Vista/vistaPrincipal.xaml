@@ -8,7 +8,6 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
@@ -16,7 +15,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
-                <RowDefinition/>
+
                 <RowDefinition Height="3*" />
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal">
@@ -35,28 +34,19 @@
                 <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
                 <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Grid.Row="2">
                 <TextBlock Text="Operaciones: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
             </StackPanel>
+            
             <DataGrid Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Equipos" Width="*" Binding="{Binding PropModeloEquipos, Mode=OneWay}"/>
-                    <DataGridTextColumn Header="Grupos" Width="*" Binding="{Binding PropModeloGrupos, Mode=OneWay}"/>
-                    <DataGridTextColumn Header="Localizaciones" Width="*" Binding="{Binding PropModeloLocalizaciones, Mode=OneWay}"/>
-                    <DataGridTextColumn Header="Objetivos" Width="*" Binding="{Binding PropModeloObjetivos, Mode=OneWay}"/>
-                    <DataGridTextColumn Header="Operaciones" Width="*" Binding="{Binding PropModeloOperaciones, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Equipos" Width="*" Binding="{Binding PropModeloEquipo, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Grupos" Width="*" Binding="{Binding PropModeloGrupo, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Localizaciones" Width="*" Binding="{Binding PropModeloLocalizacion, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Objetivos" Width="*" Binding="{Binding PropModeloObjetivo, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Operaciones" Width="*" Binding="{Binding PropModeloOperacion, Mode=OneWay}"/>
                 </DataGrid.Columns>
             </DataGrid>
-        </Grid>
-
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
         </Grid>
 
     </Grid>

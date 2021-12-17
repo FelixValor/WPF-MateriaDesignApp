@@ -64,19 +64,18 @@ namespace ProyectoSteamVinito.Core
         public ObservableCollection<ModeloRegistro> consultarRegistros()
         {
             ObservableCollection<ModeloRegistro> lista = new ObservableCollection<ModeloRegistro>();
+            comando = new MySqlCommand("select * from registro");
+            comando.Connection = conexionBD;
+            AbrirConexion();
+            reader = comando.ExecuteReader();
+            MySqlDataReader readerById;
+            ModeloRegistro mr = new ModeloRegistro();
+            MySqlConnection conexion = new MySqlConnection(cadenaConexion);
             try
             {
-                comando = new MySqlCommand("select * from registro");
-                comando.Connection = conexionBD;
-                AbrirConexion();
-                reader = comando.ExecuteReader();
-                MySqlDataReader readerById;
-                ModeloRegistro mr = new ModeloRegistro();
-                MySqlConnection conexion = new MySqlConnection(cadenaConexion);
-
                 while (reader.Read())
                 {
-                    comando = new MySqlCommand("select * from equipo");
+                    comando = new MySqlCommand("select * from equipo where id_equipo = " + reader.GetInt32(6));
                     comando.Connection = conexion;
                     conexion.Open();
                     readerById = comando.ExecuteReader();
@@ -88,7 +87,7 @@ namespace ProyectoSteamVinito.Core
                     conexion.Close();
                     readerById.Close();
 
-                    comando = new MySqlCommand("select * from grupo");
+                    comando = new MySqlCommand("select * from grupo where id_grupo = " + reader.GetInt32(3));
                     comando.Connection = conexion;
                     conexion.Open();
                     readerById = comando.ExecuteReader();
@@ -100,7 +99,7 @@ namespace ProyectoSteamVinito.Core
                     conexion.Close();
                     readerById.Close();
 
-                    comando = new MySqlCommand("select * from objetivo");
+                    comando = new MySqlCommand("select * from objetivo where id_objetivo = " + reader.GetInt32(4));
                     comando.Connection = conexion;
                     conexion.Open();
                     readerById = comando.ExecuteReader();
@@ -112,7 +111,7 @@ namespace ProyectoSteamVinito.Core
                     conexion.Close();
                     readerById.Close();
 
-                    comando = new MySqlCommand("select * from localizacion");
+                    comando = new MySqlCommand("select * from localizacion where id_localizacion = " + reader.GetInt32(3));
                     comando.Connection = conexion;
                     conexion.Open();
                     readerById = comando.ExecuteReader();
@@ -124,7 +123,7 @@ namespace ProyectoSteamVinito.Core
                     conexion.Close();
                     readerById.Close();
 
-                    comando = new MySqlCommand("select * from operacion");
+                    comando = new MySqlCommand("select * from operacion where id_operacion = " + reader.GetInt32(4));
                     comando.Connection = conexion;
                     conexion.Open();
                     readerById = comando.ExecuteReader();
@@ -143,6 +142,9 @@ namespace ProyectoSteamVinito.Core
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                CerrarConexion();
+                conexion.Close();
+                reader.Close();
             }
             return lista;
         }
