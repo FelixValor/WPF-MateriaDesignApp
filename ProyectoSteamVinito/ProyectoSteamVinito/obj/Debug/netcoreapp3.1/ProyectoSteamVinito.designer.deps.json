@@ -125,6 +125,14 @@
           }
         }
       },
+      "SciChart.Wpf.UI.Transitionz/3.1.251": {
+        "runtime": {
+          "lib/netcoreapp3.0/SciChart.Wpf.UI.Transitionz.dll": {
+            "assemblyVersion": "3.1.251.0",
+            "fileVersion": "3.1.251.0"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
@@ -352,6 +360,13 @@
       "sha512": "sha512-Ef+sH12/nGAiF9yLZFkuXh7vtVvEPiLKyZNJiDk+VBULzLcXj0lmfU7qcmWNCSVX5n6zu5jMV+JaNf1C+a+T8g==",
       "path": "mysql.data/8.0.27",
       "hashPath": "mysql.data.8.0.27.nupkg.sha512"
+    },
+    "SciChart.Wpf.UI.Transitionz/3.1.251": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iMdsvumY9HO/6uurr6qLRxhYoN7u3EEC8lqBy11e65hBak9UISYu3KqvFs3jPi+xloxHpOJ7oz/tzCJn5wnHeg==",
+      "path": "scichart.wpf.ui.transitionz/3.1.251",
+      "hashPath": "scichart.wpf.ui.transitionz.3.1.251.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

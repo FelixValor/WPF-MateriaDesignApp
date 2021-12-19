@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/ptGUzE4x6FTUINMYB9eBz7vltCRizeVWyrgGN+NyZ8osyNdDUb4x+Wo7PZ3URgEBjYEx+UxF+SHArSWdAenJA==",
+  "dgSpecHash": "tI1kmBpMs7zN+LwakUbMyumSM3tJ08Lh//03l21yXQkXf9F0vRrjM9/2NP2cU32wYz8c0wmpqGE0CGTLphpJkA==",
   "success": true,
   "projectFilePath": "C:\\ProyectoSteamVinitoGIT\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Felix\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\mysql.data\\8.0.27\\mysql.data.8.0.27.nupkg.sha512",
+    "C:\\Users\\Felix\\.nuget\\packages\\scichart.wpf.ui.transitionz\\3.1.251\\scichart.wpf.ui.transitionz.3.1.251.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\Felix\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

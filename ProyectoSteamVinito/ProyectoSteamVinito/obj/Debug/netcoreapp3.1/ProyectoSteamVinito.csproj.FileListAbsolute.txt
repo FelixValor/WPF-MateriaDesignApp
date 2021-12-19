@@ -115,7 +115,6 @@ C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamV
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ZstdNet.dll
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
-C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
@@ -138,3 +137,4 @@ C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamV
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
 C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\SciChart.Wpf.UI.Transitionz.dll
