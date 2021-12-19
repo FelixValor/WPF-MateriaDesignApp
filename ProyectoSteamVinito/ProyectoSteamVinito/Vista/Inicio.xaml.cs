@@ -13,7 +13,6 @@ namespace ProyectoSteamVinito.Vista
     public partial class Inicio : Window
     {
         VistaModeloVistaPrincipal vmvp;
-        private static Boolean esCarga = true;
         private static Timer timerPantallaCarga = new System.Timers.Timer();
         public Inicio()
         {
@@ -32,10 +31,7 @@ namespace ProyectoSteamVinito.Vista
         {
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
-                botoneraSuperior.Visibility = Visibility.Visible;
-                vistaPrincipal.Visibility = Visibility.Visible;
-                vistaAjustes.Visibility = Visibility.Collapsed;
-                pantallaCarga.Visibility = Visibility.Collapsed;
+                ActivadorAnimacion.IsChecked = true;
                 timerPantallaCarga.Stop();
             }));
         }
