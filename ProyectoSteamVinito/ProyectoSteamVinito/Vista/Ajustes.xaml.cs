@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoSteamVinito.VistaModelo;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -18,6 +19,7 @@ namespace ProyectoSteamVinito.Vista
     /// </summary>
     public partial class Ajustes : UserControl
     {
+        private VistaModeloAjustes vma;
         public Ajustes()
         {
             InitializeComponent();
@@ -59,6 +61,18 @@ namespace ProyectoSteamVinito.Vista
                 btnOperacion_Large.Visibility = Visibility.Visible;
                 btnOperacion_Short.Visibility = Visibility.Collapsed;
             }
+        }
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
+        {
+            vma = new VistaModeloAjustes();
+            vma.CargarEquipos();
+            vma.CargarGrupos();
+            vma.CargarLocalizaciones();
+            vma.CargarObjetivos();
+            vma.CargarOperaciones();
+            dataGridAjustes.ItemsSource = vma.Grupos;
+            colImagen.Visibility = Visibility.Collapsed;
         }
     }
 }

@@ -135,15 +135,6 @@
           "lib/netstandard2.1/ZstdNet.dll": {}
         }
       },
-      "SciChart.Wpf.UI.Transitionz/3.1.251": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.0/SciChart.Wpf.UI.Transitionz.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/SciChart.Wpf.UI.Transitionz.dll": {}
-        }
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -547,21 +538,6 @@
         "mysql.data.nuspec"
       ]
     },
-    "SciChart.Wpf.UI.Transitionz/3.1.251": {
-      "sha512": "iMdsvumY9HO/6uurr6qLRxhYoN7u3EEC8lqBy11e65hBak9UISYu3KqvFs3jPi+xloxHpOJ7oz/tzCJn5wnHeg==",
-      "type": "package",
-      "path": "scichart.wpf.ui.transitionz/3.1.251",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/SciChart.Wpf.UI.Transitionz.dll",
-        "lib/net452/SciChart.Wpf.UI.Transitionz.xml",
-        "lib/netcoreapp3.0/SciChart.Wpf.UI.Transitionz.dll",
-        "lib/netcoreapp3.0/SciChart.Wpf.UI.Transitionz.xml",
-        "scichart.wpf.ui.transitionz.3.1.251.nupkg.sha512",
-        "scichart.wpf.ui.transitionz.nuspec"
-      ]
-    },
     "System.Buffers/4.5.1": {
       "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
       "type": "package",
@@ -949,30 +925,29 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "MaterialDesignThemes >= 4.3.0",
-      "MySql.Data >= 8.0.27",
-      "SciChart.Wpf.UI.Transitionz >= 3.1.251"
+      "MySql.Data >= 8.0.27"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Felix\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Mario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectoSteamVinitoGIT\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+      "projectUniqueName": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
       "projectName": "ProyectoSteamVinito",
-      "projectPath": "C:\\ProyectoSteamVinitoGIT\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
-      "packagesPath": "C:\\Users\\Felix\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectoSteamVinitoGIT\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\obj\\",
+      "projectPath": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito.csproj",
+      "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mario\\Desktop\\2DAM\\DI\\ProyectoSteamVinito\\ProyectoSteamVinito\\ProyectoSteamVinito\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Felix\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1004,10 +979,6 @@
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.27, )"
-          },
-          "SciChart.Wpf.UI.Transitionz": {
-            "target": "Package",
-            "version": "[3.1.251, )"
           }
         },
         "imports": [
@@ -1028,7 +999,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

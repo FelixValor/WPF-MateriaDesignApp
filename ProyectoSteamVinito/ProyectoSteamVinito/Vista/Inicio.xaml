@@ -5,23 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoSteamVinito.Vista" 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:tz="http://schemas.abtsoftware.co.uk/transitionz"
         mc:Ignorable="d"
         Title="Proyecto Vinito -- Inicio" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded"
         MinWidth="730" MinHeight="500" MaxHeight="750" MaxWidth="1000">
-    <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="b2vc"></BooleanToVisibilityConverter>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <CheckBox x:Name="ActivadorAnimacion" IsChecked="False" Visibility="Collapsed"></CheckBox>
-        <Grid x:Name="botoneraSuperior" 
-             tz:Transitionz.Opacity="{tz:OpacityParams From=0, To=1, Duration=500, TransitionOn=Visibility }"
-             tz:Transitionz.Translate="{tz:TranslateParams From='10,0', To='0,0', Duration=200, TransitionOn=Visibility}"
-             tz:Transitionz.Visibility="{Binding ElementName=ActivadorAnimacion, Path=IsChecked, Converter={StaticResource b2vc}}">
+        <Grid x:Name="botoneraSuperior">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -37,17 +29,8 @@
             </StackPanel>
             <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
         </Grid>
-        
-        <local:vistaPrincipal x:Name="vistaPrincipal" Grid.Row="1"  
-                tz:Transitionz.Opacity="{tz:OpacityParams From=0, To=1, Duration=500, TransitionOn=Visibility }"
-                tz:Transitionz.Translate="{tz:TranslateParams From='10,0', To='0,0', Duration=200, TransitionOn=Visibility}"
-                tz:Transitionz.Visibility="{Binding ElementName=ActivadorAnimacion, Path=IsChecked, Converter={StaticResource b2vc}}"/>
-
-        <local:Ajustes x:Name="vistaAjustes" Grid.Row="1"/>
-        <local:PantallaCarga x:Name="pantallaCarga" Grid.Row="1"
-                tz:Transitionz.Opacity="{tz:OpacityParams From=1, To=0, Duration=500, TransitionOn=Visibility }"
-                tz:Transitionz.Translate="{tz:TranslateParams From='10,0', To='0,0', Duration=200, TransitionOn=Visibility}"
-                tz:Transitionz.Visibility="{Binding ElementName=ActivadorAnimacion, Path=IsChecked, Converter={StaticResource b2vc}}"/>
-        
+            <local:vistaPrincipal x:Name="vistaPrincipal" Grid.Row="1"/>
+            <local:Ajustes x:Name="vistaAjustes" Grid.Row="1"/>
+            <local:PantallaCarga x:Name="pantallaCarga" Grid.Row="1"/>
     </Grid>
 </Window>
