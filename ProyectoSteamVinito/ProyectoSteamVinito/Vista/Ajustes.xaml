@@ -6,6 +6,11 @@
              xmlns:local="clr-namespace:ProyectoSteamVinito.Vista" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="local:Comando.Agregar" Executed="EjecutarAgregado"/>
+        <CommandBinding Command="local:Comando.Modificar" Executed="EjecutarModificado"/>
+        <CommandBinding Command="local:Comando.Eliminar" Executed="EjecutarEliminado"/>
+    </UserControl.CommandBindings>
     <Grid Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition  MaxWidth="200" MinWidth="75" Width="*" />
@@ -92,18 +97,19 @@
                 </DataGrid>
             </Grid>
             <StackPanel Orientation="Vertical" Grid.Column="1">
-                <Button Margin="10,10">
+                <!--Boton Agregar-->
+                <Button Margin="10,10" Command="local:Comando.Agregar">
                     <Button.Content>Añadir</Button.Content>
                 </Button>
-                <Button Margin="10,10">
-                    
+                <!--Boton Modificar-->
+                <Button Margin="10,10"  Command="local:Comando.Modificar">
                     <Button.Content>Modificar</Button.Content>
                 </Button>
-                <Button Margin="10,10">
+                <!--Boton Eliminar-->
+                <Button Margin="10,10"  Command="local:Comando.Eliminar">
                     <Button.Content>Eliminar</Button.Content>
                 </Button>
                 <Image Height="100" Width="100" x:Name="colImagen" Source="./logo-IESGP-FP.png"/>
-
             </StackPanel>
         </Grid>
     </Grid>

@@ -105,5 +105,27 @@ namespace ProyectoSteamVinito.Vista
             dataGridAjustes.ItemsSource = vma.Objetivos;
             colImagen.Visibility = Visibility.Collapsed;
         }
+
+        private void EjecutarAgregado(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show("Agregado");
+        }        
+        
+        private void EjecutarModificado(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show("Modificado");
+        }        
+        
+        private void EjecutarEliminado(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show("Eliminado");
+        }
+    }
+
+    public static class Comando
+    {
+        public static readonly RoutedUICommand Agregar = new RoutedUICommand("Accion de agregar registro", "Agregar", typeof(Comando));
+        public static readonly RoutedUICommand Modificar = new RoutedUICommand("Accion de modificar registro", "Modificar", typeof(Comando));
+        public static readonly RoutedUICommand Eliminar = new RoutedUICommand("Accion de eliminar registro", "Eliminar", typeof(Comando));
     }
 }
