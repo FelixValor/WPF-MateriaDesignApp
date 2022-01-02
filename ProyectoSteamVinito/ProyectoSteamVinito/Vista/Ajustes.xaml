@@ -15,57 +15,57 @@
         <Grid SizeChanged="Grid_SizeChanged">
             <StackPanel Orientation="Vertical">
                 <!--Boton Grupos-->
-                <Button Margin="10,10" Padding="0" x:Name="btnGrupos_Large">
+                <Button Margin="10,10" Padding="0" x:Name="btnGrupos_Large" Click="btnGrupos_Large_Click">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="AccountGroup" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Grupos</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0" x:Name="btnGrupos_Short"  Visibility="Collapsed" Cursor="Hand">
+                <Button Margin="10,10" Padding="0" x:Name="btnGrupos_Short"  Visibility="Collapsed" Cursor="Hand" Click="btnGrupos_Large_Click">
                     <materialDesign:PackIcon Kind="AccountGroup" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
                 </Button>
 
                 <!--Boton Localizacion-->
-                <Button Margin="10,10" Padding="0"  x:Name="btnLoc_Large">
+                <Button Margin="10,10" Padding="0"  x:Name="btnLoc_Large" Click="btnLoc_Large_Click">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="MapMarkerRadius" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Localizacion</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0" x:Name="btnLoc_Short"  Visibility="Collapsed" Cursor="Hand">
+                <Button Margin="10,10" Padding="0" x:Name="btnLoc_Short"  Visibility="Collapsed" Cursor="Hand" Click="btnLoc_Large_Click">
                     <materialDesign:PackIcon Kind="MapMarkerRadius" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
                 </Button>
 
                 <!--Boton Equipo-->
-                <Button Margin="10,10" Padding="0" x:Name="btnEquipo_Large">
+                <Button Margin="10,10" Padding="0" x:Name="btnEquipo_Large" Click="btnEquipo_Large_Click">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="Toolbox" Margin="0,0,10,0" Height="30" Width="30" Padding="0" HorizontalAlignment="Left"/>
                         <TextBlock VerticalAlignment="Center">Equipo</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0" x:Name="btnEquipo_Short"  Visibility="Collapsed" Cursor="Hand">
+                <Button Margin="10,10" Padding="0" x:Name="btnEquipo_Short"  Visibility="Collapsed" Cursor="Hand" Click="btnEquipo_Large_Click">
                     <materialDesign:PackIcon Kind="Toolbox" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
                 </Button>
 
                 <!--Boton Operacion-->
-                <Button Margin="10,10" Padding="0" x:Name="btnOperacion_Large">
+                <Button Margin="10,10" Padding="0" x:Name="btnOperacion_Large" Click="btnOperacion_Large_Click">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="Tools" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Operacion</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0" x:Name="btnOperacion_Short"  Visibility="Collapsed" Cursor="Hand">
+                <Button Margin="10,10" Padding="0" x:Name="btnOperacion_Short"  Visibility="Collapsed" Cursor="Hand" Click="btnOperacion_Large_Click">
                     <materialDesign:PackIcon Kind="Tools" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
                 </Button>
 
                 <!--Boton Objetivo-->
-                <Button Margin="10,10" Padding="0" x:Name="btnObjetivo_Large">
+                <Button Margin="10,10" Padding="0" x:Name="btnObjetivo_Large" Click="btnObjetivo_Large_Click">
                     <StackPanel Orientation="Horizontal" Width="130">
                         <materialDesign:PackIcon Kind="Target" Margin="0,0,10,0" Height="30" Width="30" Padding="0"/>
                         <TextBlock VerticalAlignment="Center">Objetivo</TextBlock>
                     </StackPanel>
                 </Button>
-                <Button Margin="10,10" Padding="0" x:Name="btnObjetivo_Short"  Visibility="Collapsed" Cursor="Hand">
+                <Button Margin="10,10" Padding="0" x:Name="btnObjetivo_Short"  Visibility="Collapsed" Cursor="Hand" Click="btnObjetivo_Large_Click">
                     <materialDesign:PackIcon Kind="Target" HorizontalAlignment="Center" Height="30" Width="30" Padding="0"/>
                 </Button>
             </StackPanel>

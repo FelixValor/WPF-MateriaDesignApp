@@ -66,12 +66,43 @@ namespace ProyectoSteamVinito.Vista
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
             vma = new VistaModeloAjustes();
-            vma.CargarEquipos();
             vma.CargarGrupos();
-            vma.CargarLocalizaciones();
-            vma.CargarObjetivos();
-            vma.CargarOperaciones();
             dataGridAjustes.ItemsSource = vma.Grupos;
+            colImagen.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnGrupos_Large_Click(object sender, RoutedEventArgs e)
+        {
+            vma.CargarGrupos();
+            dataGridAjustes.ItemsSource = vma.Grupos;
+            colImagen.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnLoc_Large_Click(object sender, RoutedEventArgs e)
+        {
+            vma.CargarLocalizaciones();
+            dataGridAjustes.ItemsSource = vma.Localizaciones;
+            colImagen.Visibility = Visibility.Visible;
+        }
+
+        private void btnEquipo_Large_Click(object sender, RoutedEventArgs e)
+        {
+            vma.CargarEquipos();
+            dataGridAjustes.ItemsSource = vma.Equipos;
+            colImagen.Visibility = Visibility.Visible;
+        }
+
+        private void btnOperacion_Large_Click(object sender, RoutedEventArgs e)
+        {
+            vma.CargarOperaciones();
+            dataGridAjustes.ItemsSource = vma.Operaciones;
+            colImagen.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnObjetivo_Large_Click(object sender, RoutedEventArgs e)
+        {
+            vma.CargarObjetivos();
+            dataGridAjustes.ItemsSource = vma.Objetivos;
             colImagen.Visibility = Visibility.Collapsed;
         }
     }
