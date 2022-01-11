@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoSteamVinito___Formulario_Insercion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="472" Width="800" SizeChanged="Window_SizeChanged">
+        Title="MainWindow" MinHeight="660" Width="1300" SizeChanged="Window_SizeChanged" MinWidth="460">
     <Grid>
         <Grid x:Name="VistaTabular">
             <Grid.RowDefinitions>
