@@ -7,7 +7,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Proyecto Vinito -- Inicio" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded"
-        MinWidth="730" MinHeight="500" MaxHeight="750" MaxWidth="1000">
+        MinWidth="850" MinHeight="500" MaxHeight="750" MaxWidth="1000">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>

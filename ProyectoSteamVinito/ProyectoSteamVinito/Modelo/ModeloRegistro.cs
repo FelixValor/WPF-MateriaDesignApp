@@ -7,7 +7,7 @@ namespace ProyectoSteamVinito.Modelo
 {
     public class ModeloRegistro : INotifyPropertyChanged
     {
-
+        private String fechaRegistro;
         private ModeloEquipo modeloEquipo;
         private ModeloGrupo modeloGrupo;
         private ModeloObjetivo modeloObjetivo;
@@ -18,6 +18,19 @@ namespace ProyectoSteamVinito.Modelo
         private void RaisePropertyChanged(string propiedad)
         {
             if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propiedad));
+        }
+
+        public String PropFecha
+        {
+            get { return fechaRegistro; }
+            set
+            {
+                if (fechaRegistro.Equals(value))
+                {
+                    fechaRegistro = value;
+                    RaisePropertyChanged("PropFecha");
+                }
+            }
         }
 
         public ModeloEquipo PropModeloEquipo

@@ -14,7 +14,7 @@ namespace ProyectoSteamVinito.Core
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
         private string bd = "bodega"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
+        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
@@ -61,91 +61,39 @@ namespace ProyectoSteamVinito.Core
             }
         }
 
-        public ObservableCollection<ModeloRegistro> consultarRegistros()
+        public ObservableCollection<ModeloRegistro> consultarRegistros(String [] filtrado)
         {
             ObservableCollection<ModeloRegistro> lista = new ObservableCollection<ModeloRegistro>();
-            comando = new MySqlCommand("select * from registro");
+            String query = "select equipo.id_equipo, equipo.nombre, equipo.imagen, grupo.id_grupo, grupo.nombre, localizacion.id_localizacion, localizacion.nombre, localizacion.imagen, objetivo.id_objetivo, objetivo.nombre, operacion.id_operacion, operacion.nombre " +
+                                       "from registro, equipo, grupo, localizacion, objetivo, operacion " +
+                                            "where registro.id_grupo = grupo.id_grupo and registro.id_operacion = operacion.id_operacion and registro.id_objetivo = objetivo.id_objetivo" +
+                                            " and registro.id_operacion = operacion.id_operacion and registro.id_equipo = equipo.id_equipo where ";
+            comando = new MySqlCommand(query);
             comando.Connection = conexionBD;
             AbrirConexion();
-            reader = comando.ExecuteReader();
-            MySqlDataReader readerById;
             ModeloRegistro mr = new ModeloRegistro();
-            MySqlConnection conexion = new MySqlConnection(cadenaConexion);
+
             try
             {
+                reader = comando.ExecuteReader();
                 while (reader.Read())
                 {
-                    comando = new MySqlCommand("select * from equipo where id_equipo = " + reader.GetInt32(6));
-                    comando.Connection = conexion;
-                    conexion.Open();
-                    readerById = comando.ExecuteReader();
-
-                    while (readerById.Read())
-                    {
-                        mr.PropModeloEquipo = new ModeloEquipo() { Id = readerById.GetString(0), Nombre = readerById.GetString(1) };
-                    }
-                    conexion.Close();
-                    readerById.Close();
-
-                    comando = new MySqlCommand("select * from grupo where id_grupo = " + reader.GetInt32(3));
-                    comando.Connection = conexion;
-                    conexion.Open();
-                    readerById = comando.ExecuteReader();
-
-                    while (readerById.Read())
-                    {
-                        mr.PropModeloGrupo = new ModeloGrupo() { Id = readerById.GetString(0), Nombre = readerById.GetString(1) };
-                    }
-                    conexion.Close();
-                    readerById.Close();
-
-                    comando = new MySqlCommand("select * from objetivo where id_objetivo = " + reader.GetInt32(4));
-                    comando.Connection = conexion;
-                    conexion.Open();
-                    readerById = comando.ExecuteReader();
-
-                    while (readerById.Read())
-                    {
-                        mr.PropModeloObjetivo = new ModeloObjetivo() { Id = readerById.GetString(0), Nombre = readerById.GetString(1) };
-                    }
-                    conexion.Close();
-                    readerById.Close();
-
-                    comando = new MySqlCommand("select * from localizacion where id_localizacion = " + reader.GetInt32(3));
-                    comando.Connection = conexion;
-                    conexion.Open();
-                    readerById = comando.ExecuteReader();
-
-                    while (readerById.Read())
-                    {
-                        mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = readerById.GetString(0), Nombre = readerById.GetString(1) };
-                    }
-                    conexion.Close();
-                    readerById.Close();
-
-                    comando = new MySqlCommand("select * from operacion where id_operacion = " + reader.GetInt32(4));
-                    comando.Connection = conexion;
-                    conexion.Open();
-                    readerById = comando.ExecuteReader();
-
-                    while (readerById.Read())
-                    {
-                        mr.PropModeloOperacion = new ModeloOperacion() { Id = readerById.GetString(0), Nombre = readerById.GetString(1) };
-                    }
-                    conexion.Close();
-                    readerById.Close();
-
-                    lista.Add(mr);
+                    mr.PropModeloEquipo = new ModeloEquipo() { Id = reader.GetString(0), Nombre = reader.GetString(1) };
+                    mr.PropModeloGrupo = new ModeloGrupo() { Id = reader.GetString(3), Nombre = reader.GetString(4) };
+                    mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = reader.GetString(5), Nombre = reader.GetString(6) };
+                    mr.PropModeloObjetivo = new ModeloObjetivo() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
+                    mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
                 }
+                reader.Close();
                 CerrarConexion();
+                lista.Add(mr);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 CerrarConexion();
-                conexion.Close();
-                reader.Close();
             }
+
             return lista;
         }
 
