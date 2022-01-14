@@ -5,8 +5,104 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoSteamVinito___Formulario_Insercion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MinHeight="660" Width="1300" SizeChanged="Window_SizeChanged" MinWidth="460">
     <Grid>
+        <Grid x:Name="VistaTabular">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Formulario de Inserción de Registros" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"/>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1.5*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Fecha:" Grid.Row="1" Grid.Column="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Grupo:" Grid.Row="1" Grid.Column="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Localización:" Grid.Row="1" Grid.Column="5" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Objetivo:" Grid.Row="1" Grid.Column="7" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Label  x:Name="lblFecha" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cmbGrupo" Grid.Row="2" Grid.Column="3" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=cmbGrupo2,Path=SelectedValue}"/>
+                <ComboBox x:Name="cmbLocalizacion" Grid.Row="2" Grid.Column="5" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=cmbLocalizacion2,Path=SelectedValue}"/>
+                <ComboBox x:Name="cmbObjetivo" Grid.Row="2" Grid.Column="7" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=cmbObjetivo2,Path=SelectedValue}"/>
+                <TextBlock Text="Operación:" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <ComboBox x:Name="cmbOperacion" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=cmbOperacion2,Path=SelectedValue}"/>
+                <TextBlock Text="Equipo:" Grid.Row="6" Grid.Column="1" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <ComboBox x:Name="cmbEquipo" Grid.Row="6" Grid.Column="3" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Text="{Binding ElementName=cmbEquipo2,Path=SelectedValue}"/>
+                <Button  x:Name="btnEnviar" Content="Enviar"  Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="100" Click="btnEnviar_Click" />
+                <Button  x:Name="btnLimpiar" Content="Limpiar"  Grid.Row="8" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="100" Click="btnLimpiar_Click" Cursor="Hand" />
 
+            </Grid>
+        </Grid>
+        <Grid x:Name="VistaColumnas">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+                <RowDefinition/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Formulario de Inserción de Registros" Grid.ColumnSpan="2" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="Fecha:" Grid.Row="2" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Grupo:" Grid.Row="4" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Localización:" Grid.Row="6" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Objetivo:" Grid.Row="8" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Operación:" Grid.Row="10" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="Equipo:" Grid.Row="12" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <Label  x:Name="lblFecha2" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0"/>
+            <ComboBox x:Name="cmbGrupo2" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text=""/>
+            <ComboBox x:Name="cmbLocalizacion2" Grid.Row="6" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text=""/>
+            <ComboBox x:Name="cmbObjetivo2" Grid.Row="8" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0"/>
+            <ComboBox x:Name="cmbOperacion2" Grid.Row="10" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text=""/>
+            <ComboBox x:Name="cmbEquipo2" Grid.Row="12" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="10,0" Text=""/>
+            <Button  x:Name="btnEnviar2" Content="Enviar" Grid.Row="14" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="100" Cursor="Hand" Click="btnEnviar2_Click" />
+            <Button  x:Name="btnLimpiar2" Content="Limpiar"  Grid.Row="14" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="100" Click="btnLimpiar2_Click" />
+        </Grid>
+        <Grid x:Name="PantallaDeCarga">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <ProgressBar Grid.Row="1" IsIndeterminate="True" Margin="20,20"  VerticalAlignment="Top"/>
+            <TextBlock Text="Cargando Recursos" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        </Grid>
     </Grid>
 </Window>

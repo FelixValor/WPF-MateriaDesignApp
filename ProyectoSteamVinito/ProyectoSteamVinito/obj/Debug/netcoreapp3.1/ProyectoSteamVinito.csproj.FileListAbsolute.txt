@@ -5,11 +5,9 @@ C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoS
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
-C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.cache
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.lref
-C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.g.resources
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfoInputs.cache
@@ -18,3 +16,164 @@ C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoS
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
 C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.exe
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.deps.json
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.json
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.dev.json
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\MainWindow.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.lref
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\MainWindow.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.g.resources
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfoInputs.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfo.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CoreCompileInputs.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CopyComplete
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.exe
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.deps.json
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.json
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.dev.json
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.lref
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.g.resources
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfoInputs.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfo.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CoreCompileInputs.cache
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CopyComplete
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CopyComplete
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.baml
+C:\Users\Felix\Desktop\DAM2\DI\Proyecto Vinito (Pruebas)\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.baml
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\Users\Mario\Desktop\2DAM\DI\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.exe
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.deps.json
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.json
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.dev.json
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.g.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.cache
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.lref
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.baml
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.baml
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.g.resources
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfoInputs.cache
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfo.cs
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CoreCompileInputs.cache
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CopyComplete
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+C:\ProyectoSteamVinitoGIT\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.exe
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.deps.json
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.json
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.runtimeconfig.dev.json
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\ZstdNet.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.AssemblyReference.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito_MarkupCompile.lref
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\App.baml
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Ajustes.baml
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\Inicio.baml
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\PantallaCarga.baml
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\Vista\vistaPrincipal.baml
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.g.resources
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.GeneratedMSBuildEditorConfig.editorconfig
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfoInputs.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.AssemblyInfo.cs
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.csproj.CoreCompileInputs.cache
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.dll
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.pdb
+D:\DAM2\DI\codigoDI\ProyectoVino\ProyectoSteamVinito\ProyectoSteamVinito\ProyectoSteamVinito\obj\Debug\netcoreapp3.1\ProyectoSteamVinito.genruntimeconfig.cache

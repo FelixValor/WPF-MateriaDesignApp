@@ -7,10 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Modelo\" />
-    <Folder Include="Recursos\" />
-    <Folder Include="VistaModelo\" />
-    <Folder Include="Vista\" />
+    <None Remove="Vista\logo-IESGP-FP.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.27" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Vista\logo-IESGP-FP.png" />
   </ItemGroup>
 
 </Project>

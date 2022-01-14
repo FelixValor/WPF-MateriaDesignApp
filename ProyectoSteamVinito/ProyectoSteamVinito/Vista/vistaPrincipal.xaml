@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="ProyectoSteamVinito.Vista.vistaPrincipal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSteamVinito.Vista"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock  Text="Fecha Inicio: " VerticalAlignment="Center" Margin="10,0"/>
+                <DatePicker x:Name="dtpFInicio" VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
+                <TextBlock Text="Fecha Final: " VerticalAlignment="Center" Margin="10,0"/>
+                <DatePicker x:Name="dtpFFinal" VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
+                <TextBlock Text="Equipo: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox x:Name="cmbEquipo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Equipos}" />
+                <Button x:Name="btnBuscar" Content="Buscar" Margin="30,0,20,0" Cursor="Hand"/>
+                <Button x:Name="btnDefecto" Content="Valores Defecto" Click="btnDefecto_Click" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <TextBlock Text="Grupo: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox x:Name="cmbGrupo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Grupos}"/>
+                <TextBlock Text="Localizacion: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox x:Name="cmbLocalizacion" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
+                <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox x:Name="cmbObjetivo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
+                <TextBlock Text="Operacioness: " VerticalAlignment="Center" Margin="10,0"/>
+                <ComboBox x:Name="cmbOperaciones" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
+            </StackPanel>
+            
+            <DataGrid Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Equipos" Width="*" Binding="{Binding PropModeloEquipo, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Grupos" Width="*" Binding="{Binding PropModeloGrupo, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Localizaciones" Width="*" Binding="{Binding PropModeloLocalizacion, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Objetivos" Width="*" Binding="{Binding PropModeloObjetivo, Mode=OneWay}"/>
+                    <DataGridTextColumn Header="Operaciones" Width="*" Binding="{Binding PropModeloOperacion, Mode=OneWay}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+    </Grid>
+</UserControl>
