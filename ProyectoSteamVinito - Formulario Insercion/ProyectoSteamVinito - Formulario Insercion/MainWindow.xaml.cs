@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -29,6 +30,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
         private string password = "inves"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private static Boolean esCarga = true;
+        private static Timer timerPantallaCarga = new System.Timers.Timer(); 
 
         public MainWindow()
         {
@@ -71,7 +73,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
             }
 
             //Timer para la pantalla de carga
-            var timerPantallaCarga = new System.Timers.Timer();
+
             timerPantallaCarga.Elapsed += timer_Tick;
             timerPantallaCarga.Interval = 3000;
             timerPantallaCarga.Enabled = true;
@@ -86,6 +88,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
                 VistaTabular.Visibility = Visibility.Visible;
                 PantallaDeCarga.Visibility = Visibility.Collapsed;
                 esCarga = false;
+                timerPantallaCarga.Stop();
             }));
         }
 

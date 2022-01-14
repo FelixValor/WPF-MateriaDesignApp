@@ -19,23 +19,25 @@
                 <RowDefinition Height="3*" />
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Fecha Inicio: " VerticalAlignment="Center" Margin="10,0"/>
-                <DatePicker VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
+                <TextBlock  Text="Fecha Inicio: " VerticalAlignment="Center" Margin="10,0"/>
+                <DatePicker x:Name="dtpFInicio" VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
                 <TextBlock Text="Fecha Final: " VerticalAlignment="Center" Margin="10,0"/>
-                <DatePicker VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
+                <DatePicker x:Name="dtpFFinal" VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
                 <TextBlock Text="Equipo: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Equipos}" />
+                <ComboBox x:Name="cmbEquipo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Equipos}" />
+                <Button x:Name="btnBuscar" Content="Buscar" Margin="30,0,20,0" Cursor="Hand"/>
+                <Button x:Name="btnDefecto" Content="Valores Defecto" Click="btnDefecto_Click" />
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1">
                 <TextBlock Text="Grupo: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Grupos}"/>
+                <ComboBox x:Name="cmbGrupo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Grupos}"/>
                 <TextBlock Text="Localizacion: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
+                <ComboBox x:Name="cmbLocalizacion" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
                 <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
+                <ComboBox x:Name="cmbObjetivo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
                 <TextBlock Text="Operaciones: " VerticalAlignment="Center" Margin="10,0"/>
-                <ComboBox VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
+                <ComboBox x:Name="cmbOperaciones" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
             </StackPanel>
             
             <DataGrid Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
