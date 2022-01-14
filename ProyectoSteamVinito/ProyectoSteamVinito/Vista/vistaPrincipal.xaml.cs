@@ -22,5 +22,16 @@ namespace ProyectoSteamVinito.Vista
         {
             InitializeComponent();
         }
+
+        private void btnDefecto_Click(object sender, RoutedEventArgs e)
+        {
+            dtpFFinal.SelectedDate=null;
+            dtpFInicio.SelectedDate = null;
+            cmbEquipo.SelectedIndex = -1;
+            cmbGrupo.SelectedIndex = -1;
+            cmbLocalizacion.SelectedIndex = -1;
+            cmbObjetivo.SelectedIndex = -1;
+            cmbOperaciones.SelectedIndex = -1;
+        }
     }
 }
