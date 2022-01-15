@@ -64,10 +64,36 @@ namespace ProyectoSteamVinito.Core
         public ObservableCollection<ModeloRegistro> consultarRegistros(String [] filtrado)
         {
             ObservableCollection<ModeloRegistro> lista = new ObservableCollection<ModeloRegistro>();
-            String query = "select equipo.id_equipo, equipo.nombre, equipo.imagen, grupo.id_grupo, grupo.nombre, localizacion.id_localizacion, localizacion.nombre, localizacion.imagen, objetivo.id_objetivo, objetivo.nombre, operacion.id_operacion, operacion.nombre " +
+            String query = query = "select equipo.id_equipo, equipo.nombre, equipo.imagen, grupo.id_grupo, grupo.nombre, localizacion.id_localizacion, localizacion.nombre, localizacion.imagen, objetivo.id_objetivo, objetivo.nombre, operacion.id_operacion, operacion.nombre " +
                                        "from registro, equipo, grupo, localizacion, objetivo, operacion " +
                                             "where registro.id_grupo = grupo.id_grupo and registro.id_operacion = operacion.id_operacion and registro.id_objetivo = objetivo.id_objetivo" +
-                                            " and registro.id_operacion = operacion.id_operacion and registro.id_equipo = equipo.id_equipo where ";
+                                            " and registro.id_operacion = operacion.id_operacion and registro.id_equipo = equipo.id_equipo and registro.id_localizacion = localizacion.id_localizacion";
+
+            if (filtrado[0] != null) //Filtrado del equipo
+            {
+                query += " and registro.id_equipo = " + int.Parse(filtrado[0]);
+            }
+
+            else if (filtrado[1] != null) //Filtrado del grupo
+            {
+                query += " and registro.id_grupo = " + int.Parse(filtrado[1]);
+            }
+
+            else if (filtrado[2] != null) //Filtrado del localizacion
+            {
+                query += " and registro.id_localizacion = " + int.Parse(filtrado[2]);
+            }
+
+            else if (filtrado[3] != null) //Filtrado del objetivo
+            {
+                query += " and registro.id_objetivo = " + int.Parse(filtrado[3]);
+            }
+
+            else if (filtrado[4] != null) //Filtrado del operacion
+            {
+                query += " and registro.id_operacion = " + int.Parse(filtrado[4]);
+            }
+
             comando = new MySqlCommand(query);
             comando.Connection = conexionBD;
             AbrirConexion();
@@ -83,10 +109,11 @@ namespace ProyectoSteamVinito.Core
                     mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = reader.GetString(5), Nombre = reader.GetString(6) };
                     mr.PropModeloObjetivo = new ModeloObjetivo() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
                     mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
+                    //mr.PropFecha = reader.GetString(9);
+                    lista.Add(mr);
                 }
                 reader.Close();
                 CerrarConexion();
-                lista.Add(mr);
             }
             catch (Exception ex)
             {
