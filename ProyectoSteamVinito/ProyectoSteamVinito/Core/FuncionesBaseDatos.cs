@@ -239,5 +239,24 @@ namespace ProyectoSteamVinito.Core
             }
             return lista;
         }
+
+        public bool EliminarRegistro(string tabla, string idRegistro)
+        {
+            bool eliminado = false;
+
+            try
+            {
+                comando = new MySqlCommand("delete from "+tabla+" where id_"+tabla+" = "+idRegistro);
+                comando.Connection = conexionBD;
+                AbrirConexion();
+                if(comando.ExecuteNonQuery() == 1) eliminado = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            CerrarConexion();
+            return eliminado;
+        }
     }
 }

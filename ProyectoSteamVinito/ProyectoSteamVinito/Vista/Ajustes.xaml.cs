@@ -1,4 +1,6 @@
-﻿using ProyectoSteamVinito.VistaModelo;
+﻿using ProyectoSteamVinito.Core;
+using ProyectoSteamVinito.Modelo;
+using ProyectoSteamVinito.VistaModelo;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,6 +22,8 @@ namespace ProyectoSteamVinito.Vista
     public partial class Ajustes : UserControl
     {
         private VistaModeloAjustes vma;
+        private string tablaActual;
+        private FuncionesBaseDatos fbd = new FuncionesBaseDatos();
         public Ajustes()
         {
             InitializeComponent();
@@ -68,6 +72,7 @@ namespace ProyectoSteamVinito.Vista
             vma = new VistaModeloAjustes();
             vma.CargarGrupos();
             dataGridAjustes.ItemsSource = vma.Grupos;
+            tablaActual = "grupo";
             colImagen.Visibility = Visibility.Collapsed;
         }
 
@@ -75,6 +80,7 @@ namespace ProyectoSteamVinito.Vista
         {
             vma.CargarGrupos();
             dataGridAjustes.ItemsSource = vma.Grupos;
+            tablaActual = "grupo";
             colImagen.Visibility = Visibility.Collapsed;
         }
 
@@ -82,6 +88,7 @@ namespace ProyectoSteamVinito.Vista
         {
             vma.CargarLocalizaciones();
             dataGridAjustes.ItemsSource = vma.Localizaciones;
+            tablaActual = "localizacion";
             colImagen.Visibility = Visibility.Visible;
         }
 
@@ -89,6 +96,7 @@ namespace ProyectoSteamVinito.Vista
         {
             vma.CargarEquipos();
             dataGridAjustes.ItemsSource = vma.Equipos;
+            tablaActual = "equipo";
             colImagen.Visibility = Visibility.Visible;
         }
 
@@ -96,6 +104,7 @@ namespace ProyectoSteamVinito.Vista
         {
             vma.CargarOperaciones();
             dataGridAjustes.ItemsSource = vma.Operaciones;
+            tablaActual = "operacion";
             colImagen.Visibility = Visibility.Collapsed;
         }
 
@@ -103,6 +112,7 @@ namespace ProyectoSteamVinito.Vista
         {
             vma.CargarObjetivos();
             dataGridAjustes.ItemsSource = vma.Objetivos;
+            tablaActual = "objetivo";
             colImagen.Visibility = Visibility.Collapsed;
         }
 
@@ -118,7 +128,35 @@ namespace ProyectoSteamVinito.Vista
         
         private void EjecutarEliminado(object sender, ExecutedRoutedEventArgs e)
         {
-            MessageBox.Show("Eliminado");
+            if (dataGridAjustes.SelectedIndex != -1)
+            {
+                if (tablaActual.Equals("grupo"))
+                {
+                    if (fbd.EliminarRegistro(tablaActual, ((ModeloGrupo)dataGridAjustes.SelectedItem).Id)) MessageBox.Show("Se ha eliminado el registro correctamente");
+                    else MessageBox.Show("¡No se ha podido eliminar el registro!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+
+                else if (tablaActual.Equals("localizacion")) {
+                    if (fbd.EliminarRegistro(tablaActual, ((ModeloLocalizacion)dataGridAjustes.SelectedItem).Id)) MessageBox.Show("Se ha eliminado el registro correctamente");
+                    else MessageBox.Show("¡No se ha podido eliminar el registro!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
+                }                
+                
+                else if (tablaActual.Equals("equipo")) {
+                    if (fbd.EliminarRegistro(tablaActual, ((ModeloEquipo)dataGridAjustes.SelectedItem).Id)) MessageBox.Show("Se ha eliminado el registro correctamente");
+                    else MessageBox.Show("¡No se ha podido eliminar el registro!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
+                }                
+                
+                else if (tablaActual.Equals("operacion")) {
+                    if (fbd.EliminarRegistro(tablaActual, ((ModeloOperacion)dataGridAjustes.SelectedItem).Id)) MessageBox.Show("Se ha eliminado el registro correctamente");
+                    else MessageBox.Show("¡No se ha podido eliminar el registro!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
+                }                
+                
+                else if (tablaActual.Equals("objetivo")) {
+                    if (fbd.EliminarRegistro(tablaActual, ((ModeloObjetivo)dataGridAjustes.SelectedItem).Id)) MessageBox.Show("Se ha eliminado el registro correctamente");
+                    else MessageBox.Show("¡No se ha podido eliminar el registro!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else MessageBox.Show("¡Elige un dato a eliminar!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
