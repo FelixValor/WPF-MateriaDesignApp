@@ -25,7 +25,7 @@
                 <DatePicker x:Name="dtpFFinal" VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
                 <TextBlock Text="Equipo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox x:Name="cmbEquipo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Equipos}" />
-                <Button x:Name="btnBuscar" Content="Buscar" Margin="30,0,20,0" Cursor="Hand"/>
+                <Button x:Name="btnBuscar" Content="Buscar" Margin="30,0,20,0" Cursor="Hand" Click="btnBuscar_Click"/>
                 <Button x:Name="btnDefecto" Content="Valores Defecto" Click="btnDefecto_Click" />
             </StackPanel>
 
