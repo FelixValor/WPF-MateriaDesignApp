@@ -41,15 +41,26 @@ namespace ProyectoSteamVinito.Vista
             //ARRAY CON TODOS LOS FILTROS
             string[] datos = new string[7];
 
-            datos[1] = ((ModeloGrupo)cmbGrupo.SelectedItem).Id;
-            datos[2] = ((ModeloLocalizacion)cmbLocalizacion.SelectedItem).Id;
-            datos[3] = ((ModeloObjetivo)cmbObjetivo.SelectedItem).Id;
-            datos[4] = ((ModeloOperacion)cmbOperaciones.SelectedItem).Id;
+            if (cmbEquipo.SelectedIndex != -1) datos[0] = ((ModeloEquipo)cmbEquipo.SelectedItem).Id;
+            else datos[0] = null;
+
+            if (cmbGrupo.SelectedIndex != -1) datos[1] = ((ModeloGrupo)cmbGrupo.SelectedItem).Id;
+            else datos[1] = null;
+
+            if (cmbLocalizacion.SelectedIndex != -1) datos[2] = ((ModeloLocalizacion)cmbLocalizacion.SelectedItem).Id;
+            else datos[2] = null;
+
+            if (cmbObjetivo.SelectedIndex != -1) datos[3] = ((ModeloObjetivo)cmbObjetivo.SelectedItem).Id;
+            else datos[3] = null;
+
+            if (cmbOperaciones.SelectedIndex != -1) datos[4] = ((ModeloOperacion)cmbOperaciones.SelectedItem).Id;
+            else datos[4] = null;
+
             datos[5] = dtpFInicio.SelectedDate.ToString();
             datos[6] = dtpFFinal.SelectedDate.ToString();
-
-            VistaModeloVistaPrincipal vmvp = new VistaModeloVistaPrincipal();
+            VistaModeloVistaPrincipal vmvp = this.DataContext as VistaModeloVistaPrincipal;
             vmvp.CargarRegistros(datos);
+            dtgRegistros.ItemsSource = vmvp.Registros;
         }
     }
 }

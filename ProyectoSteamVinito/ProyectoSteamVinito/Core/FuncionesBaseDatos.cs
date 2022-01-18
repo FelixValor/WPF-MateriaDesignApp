@@ -14,7 +14,7 @@ namespace ProyectoSteamVinito.Core
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
         private string bd = "bodega"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
+        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
@@ -74,22 +74,22 @@ namespace ProyectoSteamVinito.Core
                 query += " and registro.id_equipo = " + int.Parse(filtrado[0]);
             }
 
-            else if (filtrado[1] != null) //Filtrado del grupo
+            if (filtrado[1] != null) //Filtrado del grupo
             {
                 query += " and registro.id_grupo = " + int.Parse(filtrado[1]);
             }
 
-            else if (filtrado[2] != null) //Filtrado del localizacion
+            if (filtrado[2] != null) //Filtrado del localizacion
             {
                 query += " and registro.id_localizacion = " + int.Parse(filtrado[2]);
             }
 
-            else if (filtrado[3] != null) //Filtrado del objetivo
+            if (filtrado[3] != null) //Filtrado del objetivo
             {
                 query += " and registro.id_objetivo = " + int.Parse(filtrado[3]);
             }
 
-            else if (filtrado[4] != null) //Filtrado del operacion
+            if (filtrado[4] != null) //Filtrado del operacion
             {
                 query += " and registro.id_operacion = " + int.Parse(filtrado[4]);
             }
@@ -97,18 +97,20 @@ namespace ProyectoSteamVinito.Core
             comando = new MySqlCommand(query);
             comando.Connection = conexionBD;
             AbrirConexion();
-            ModeloRegistro mr = new ModeloRegistro();
+            ModeloRegistro mr;
 
             try
             {
                 reader = comando.ExecuteReader();
                 while (reader.Read())
                 {
+                    mr = new ModeloRegistro();
                     mr.PropModeloEquipo = new ModeloEquipo() { Id = reader.GetString(0), Nombre = reader.GetString(1) };
                     mr.PropModeloGrupo = new ModeloGrupo() { Id = reader.GetString(3), Nombre = reader.GetString(4) };
                     mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = reader.GetString(5), Nombre = reader.GetString(6) };
                     mr.PropModeloObjetivo = new ModeloObjetivo() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
-                    mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
+                    mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(10), Nombre = reader.GetString(11) };
+
                     //mr.PropFecha = reader.GetString(9);
                     lista.Add(mr);
                 }

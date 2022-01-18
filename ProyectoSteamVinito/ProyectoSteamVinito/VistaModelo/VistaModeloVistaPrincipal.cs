@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace ProyectoSteamVinito.VistaModelo
 {
-    internal class VistaModeloVistaPrincipal
+    public class VistaModeloVistaPrincipal
     {
         FuncionesBaseDatos fbd = new FuncionesBaseDatos();
 

@@ -40,7 +40,7 @@
                 <ComboBox x:Name="cmbOperaciones" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
             </StackPanel>
             
-            <DataGrid Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
+            <DataGrid x:Name="dtgRegistros" Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Equipos" Width="*" Binding="{Binding PropModeloEquipo, Mode=OneWay}"/>
                     <DataGridTextColumn Header="Grupos" Width="*" Binding="{Binding PropModeloGrupo, Mode=OneWay}"/>
