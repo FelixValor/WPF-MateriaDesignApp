@@ -14,7 +14,7 @@ namespace ProyectoSteamVinito.Core
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
         private string bd = "bodega"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
+        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
