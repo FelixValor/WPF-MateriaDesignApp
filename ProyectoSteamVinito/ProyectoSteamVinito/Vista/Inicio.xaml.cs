@@ -47,7 +47,7 @@ namespace ProyectoSteamVinito.Vista
             pantallaCarga.Visibility = Visibility.Visible;
 
             vmvp = new VistaModeloVistaPrincipal();
-            vmvp.CargarRegistros(new String[] { null, null, null, null, null });
+            vmvp.CargarRegistros(new String[] { null, null, null, null, null,null, null });
             vmvp.CargarEquipos();
             vmvp.CargarGrupos();
             vmvp.CargarLocalizaciones();

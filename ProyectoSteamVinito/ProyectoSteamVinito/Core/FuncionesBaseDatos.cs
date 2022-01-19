@@ -14,7 +14,7 @@ namespace ProyectoSteamVinito.Core
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
         private string bd = "bodega"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
+        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
@@ -92,6 +92,27 @@ namespace ProyectoSteamVinito.Core
             if (filtrado[4] != null) //Filtrado del operacion
             {
                 query += " and registro.id_operacion = " + int.Parse(filtrado[4]);
+            }
+
+            if (filtrado[6] != null && filtrado[5] != null) //Filtrado del operacion
+            {
+                String fechaini = filtrado[5].Substring(6, 4) + "-" + filtrado[5].Substring(3, 2) + "-" + filtrado[5].Substring(0, 2) + " " + filtrado[5].Substring(11, 7);
+                String fechafin = filtrado[6].Substring(6, 4) + "-" + filtrado[6].Substring(3, 2) + "-" + filtrado[6].Substring(0, 2) + " " + filtrado[6].Substring(11, 7);
+
+                query += " and registro.fecha_hora BETWEEN '" + fechaini + "' and '"+ fechafin+"'";
+            }
+            else if(filtrado[6] != null){
+                String fechafin = filtrado[6].Substring(6, 4) + "-" + filtrado[6].Substring(3, 2) + "-" + filtrado[6].Substring(0, 2) + " " + filtrado[6].Substring(11, 7);
+
+
+                query += " and registro.fecha_hora BETWEEN '*' and '" + fechafin + "'";
+
+            }
+            else if (filtrado[5] != null)
+            {
+                String fechaini = filtrado[5].Substring(6, 4) + "-" + filtrado[5].Substring(3, 2) + "-" + filtrado[5].Substring(0, 2) + " " + filtrado[5].Substring(11, 7);
+
+                query += " and registro.fecha_hora BETWEEN '" + fechaini + "' and '9999-12-31 0:00:00'";
             }
 
             comando = new MySqlCommand(query);

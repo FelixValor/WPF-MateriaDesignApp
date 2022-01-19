@@ -56,8 +56,12 @@ namespace ProyectoSteamVinito.Vista
             if (cmbOperaciones.SelectedIndex != -1) datos[4] = ((ModeloOperacion)cmbOperaciones.SelectedItem).Id;
             else datos[4] = null;
 
-            datos[5] = dtpFInicio.SelectedDate.ToString();
-            datos[6] = dtpFFinal.SelectedDate.ToString();
+            if (dtpFInicio.SelectedDate != null) datos[5] = dtpFInicio.SelectedDate.ToString();
+            else datos[5] = null;
+
+            if (dtpFFinal.SelectedDate != null) datos[6] = dtpFFinal.SelectedDate.ToString();
+            else datos[6] = null;
+
             VistaModeloVistaPrincipal vmvp = this.DataContext as VistaModeloVistaPrincipal;
             vmvp.CargarRegistros(datos);
             dtgRegistros.ItemsSource = vmvp.Registros;
