@@ -31,7 +31,7 @@
                     <materialDesign:SlideWipe Direction="Right"/>
                 </materialDesign:TransitionerSlide.ForwardWipe>
                 <materialDesign:TransitionerSlide.OpeningEffects>
-                    <materialDesign:TransitionEffect Kind="SlideInFromLeft"></materialDesign:TransitionEffect>
+                    <materialDesign:TransitionEffect Kind="SlideInFromRight"></materialDesign:TransitionEffect>
                 </materialDesign:TransitionerSlide.OpeningEffects>
 
 
@@ -72,7 +72,7 @@
                 </materialDesign:TransitionerSlide.BackwardWipe>
 
                 <materialDesign:TransitionerSlide.ForwardWipe>
-                    <materialDesign:SlideWipe Direction="Left"/>
+                    <materialDesign:SlideWipe Direction="Right"/>
                 </materialDesign:TransitionerSlide.ForwardWipe>
 
 
