@@ -26,8 +26,15 @@ namespace ProyectoSteamVinito.Modelo
             get { return modeloEquipo.Image; }
             set
             {
-                if (modeloEquipo.Image.Equals(value))
+                if (modeloEquipo.Image != null)
                 {
+                    if (modeloEquipo.Image.Equals(value))
+                    {
+                        modeloEquipo.Image = value;
+                        RaisePropertyChanged("PropImagenEquipo");
+                    }
+                }
+                else{
                     modeloEquipo.Image = value;
                     RaisePropertyChanged("PropImagenEquipo");
                 }
@@ -39,7 +46,15 @@ namespace ProyectoSteamVinito.Modelo
             get { return modeloLocalizacion.Image; }
             set
             {
-                if (modeloLocalizacion.Image.Equals(value))
+                if (modeloLocalizacion.Image != null)
+                {
+                    if (modeloLocalizacion.Image.Equals(value))
+                    {
+                        modeloLocalizacion.Image = value;
+                        RaisePropertyChanged("PropImagenLoc");
+                    }
+                }
+                else
                 {
                     modeloLocalizacion.Image = value;
                     RaisePropertyChanged("PropImagenLoc");

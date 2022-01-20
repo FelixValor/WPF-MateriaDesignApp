@@ -50,7 +50,19 @@
                 </DataGrid.Columns>
                 <DataGrid.RowDetailsTemplate>
                     <DataTemplate>
-                        <Image Height="100" Source="{Binding PropImagenEquipo}" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Equipo" Grid.Column="0" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                            <Image Height="100" Source="{Binding PropImagenEquipo}" Grid.Column="1"/>
+                            <Label Content="Localización" Grid.Column="2" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                            <Image Height="100" Source="{Binding PropImagenLoc}" Grid.Column="3"/>
+                        </Grid>
+
                     </DataTemplate>
                 </DataGrid.RowDetailsTemplate>
             </DataGrid>
