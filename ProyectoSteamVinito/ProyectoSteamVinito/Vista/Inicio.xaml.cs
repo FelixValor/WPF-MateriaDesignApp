@@ -32,19 +32,13 @@ namespace ProyectoSteamVinito.Vista
         {
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
-                botoneraSuperior.Visibility = Visibility.Visible;
-                vistaPrincipal.Visibility = Visibility.Visible;
-                vistaAjustes.Visibility = Visibility.Collapsed;
-                pantallaCarga.Visibility = Visibility.Collapsed;
+                transitioner.SelectedIndex = 3;
                 timerPantallaCarga.Stop();
             }));
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            botoneraSuperior.Visibility = Visibility.Collapsed;
-            vistaPrincipal.Visibility = Visibility.Collapsed;
-            vistaAjustes.Visibility = Visibility.Collapsed;
-            pantallaCarga.Visibility = Visibility.Visible;
+            
 
             vmvp = new VistaModeloVistaPrincipal();
             vmvp.CargarRegistros(new String[] { null, null, null, null, null,null, null });
@@ -63,15 +57,13 @@ namespace ProyectoSteamVinito.Vista
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            vistaAjustes.Visibility = Visibility.Collapsed;
-            vistaPrincipal.Visibility = Visibility.Visible;
+            transitioner.SelectedIndex = 3;
             Title = "Proyecto Vinito -- Inicio";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            vistaAjustes.Visibility = Visibility.Visible;
-            vistaPrincipal.Visibility = Visibility.Collapsed;
+            transitioner.SelectedIndex = 2;
             Title = "Proyecto Vinito -- Ajustes";
         }
     }
