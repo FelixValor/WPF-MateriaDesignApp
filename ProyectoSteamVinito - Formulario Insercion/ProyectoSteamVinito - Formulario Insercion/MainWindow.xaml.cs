@@ -86,7 +86,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
                 VistaTabular.Visibility = Visibility.Visible;
-                PantallaDeCarga.Visibility = Visibility.Collapsed;
+                transitioner.SelectedIndex = 1;
                 esCarga = false;
                 timerPantallaCarga.Stop();
             }));
