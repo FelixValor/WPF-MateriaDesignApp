@@ -131,8 +131,9 @@ namespace ProyectoSteamVinito.Core
                     mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = reader.GetString(5), Nombre = reader.GetString(6) };
                     mr.PropModeloObjetivo = new ModeloObjetivo() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
                     mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(10), Nombre = reader.GetString(11) };
+                    //mr.PropImagenEquipo = //Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(12)
+                    //mr.PropImagenLoc = //Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(13)
 
-                    //mr.PropFecha = reader.GetString(9);
                     lista.Add(mr);
                 }
                 reader.Close();

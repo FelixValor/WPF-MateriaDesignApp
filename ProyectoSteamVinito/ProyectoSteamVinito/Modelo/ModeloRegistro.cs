@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Media.Imaging;
 
 namespace ProyectoSteamVinito.Modelo
 {
@@ -18,6 +19,32 @@ namespace ProyectoSteamVinito.Modelo
         private void RaisePropertyChanged(string propiedad)
         {
             if (PropertyChanged != null) PropertyChanged(this, new PropertyChangedEventArgs(propiedad));
+        }
+
+        public BitmapImage PropImagenEquipo
+        {
+            get { return modeloEquipo.Image; }
+            set
+            {
+                if (modeloEquipo.Image.Equals(value))
+                {
+                    modeloEquipo.Image = value;
+                    RaisePropertyChanged("PropImagenEquipo");
+                }
+            }
+        }
+
+        public BitmapImage PropImagenLoc
+        {
+            get { return modeloLocalizacion.Image; }
+            set
+            {
+                if (modeloLocalizacion.Image.Equals(value))
+                {
+                    modeloLocalizacion.Image = value;
+                    RaisePropertyChanged("PropImagenLoc");
+                }
+            }
         }
 
         public String PropFecha
