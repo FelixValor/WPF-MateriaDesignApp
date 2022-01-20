@@ -3,8 +3,10 @@ using ProyectoSteamVinito.Modelo;
 using System;
 
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Text;
 using System.Windows;
+using System.Windows.Media.Imaging;
 
 namespace ProyectoSteamVinito.Core
 {
@@ -14,7 +16,7 @@ namespace ProyectoSteamVinito.Core
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
         private string bd = "bodega"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
+        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
@@ -35,6 +37,28 @@ namespace ProyectoSteamVinito.Core
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public BitmapImage SacarImagenEquipo(byte[] bytes)
+        {
+            MemoryStream ms = new MemoryStream(bytes);
+            BitmapImage imageSource = new BitmapImage();
+            imageSource.BeginInit();
+            imageSource.StreamSource = ms;
+            imageSource.EndInit();
+
+            return imageSource;
+        }
+
+        public BitmapImage SacarImagenLocalizacion(byte[] bytes)
+        {
+            MemoryStream ms = new MemoryStream(bytes);
+            BitmapImage imageSource = new BitmapImage();
+            imageSource.BeginInit();
+            imageSource.StreamSource = ms;
+            imageSource.EndInit();
+
+            return imageSource;
         }
 
         public void AbrirConexion()
@@ -131,8 +155,8 @@ namespace ProyectoSteamVinito.Core
                     mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = reader.GetString(5), Nombre = reader.GetString(6) };
                     mr.PropModeloObjetivo = new ModeloObjetivo() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
                     mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(10), Nombre = reader.GetString(11) };
-                    //mr.PropImagenEquipo = //Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(12)
-                    //mr.PropImagenLoc = //Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(13)
+                    mr.PropImagenEquipo = SacarImagenEquipo((byte[])reader[2]);//Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(12)
+                    mr.PropImagenLoc = SacarImagenLocalizacion((byte[])reader[7]);//Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(13)
 
                     lista.Add(mr);
                 }
