@@ -16,11 +16,11 @@ namespace ProyectoSteamVinito.Core
         private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
         private string bd = "bodega"; //Nombre de la base de datos
         private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
-        private string datos = null; //Variable para almacenar el resultado
+        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
         private MySqlCommand comando;
+        private bool error;
         private string cadenaConexion;
 
         public FuncionesBaseDatos()
@@ -39,24 +39,17 @@ namespace ProyectoSteamVinito.Core
             }
         }
 
-        public BitmapImage SacarImagenEquipo(byte[] bytes)
+        public BitmapImage SacarImagenDB(byte[] bytes)
         {
-            MemoryStream ms = new MemoryStream(bytes);
-            BitmapImage imageSource = new BitmapImage();
-            imageSource.BeginInit();
-            imageSource.StreamSource = ms;
-            imageSource.EndInit();
-
-            return imageSource;
-        }
-
-        public BitmapImage SacarImagenLocalizacion(byte[] bytes)
-        {
-            MemoryStream ms = new MemoryStream(bytes);
-            BitmapImage imageSource = new BitmapImage();
-            imageSource.BeginInit();
-            imageSource.StreamSource = ms;
-            imageSource.EndInit();
+            BitmapImage imageSource = null;
+            if(bytes != null)
+            {
+                MemoryStream ms = new MemoryStream(bytes);
+                imageSource = new BitmapImage();
+                imageSource.BeginInit();
+                imageSource.StreamSource = ms;
+                imageSource.EndInit();
+            }
 
             return imageSource;
         }
@@ -143,7 +136,7 @@ namespace ProyectoSteamVinito.Core
             comando.Connection = conexionBD;
             AbrirConexion();
             ModeloRegistro mr;
-
+            error = false;
             try
             {
                 reader = comando.ExecuteReader();
@@ -155,8 +148,20 @@ namespace ProyectoSteamVinito.Core
                     mr.PropModeloLocalizacion = new ModeloLocalizacion() { Id = reader.GetString(5), Nombre = reader.GetString(6) };
                     mr.PropModeloObjetivo = new ModeloObjetivo() { Id = reader.GetString(8), Nombre = reader.GetString(9) };
                     mr.PropModeloOperacion = new ModeloOperacion() { Id = reader.GetString(10), Nombre = reader.GetString(11) };
-                    mr.PropImagenEquipo = SacarImagenEquipo((byte[])reader[2]);//Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(12)
-                    mr.PropImagenLoc = SacarImagenLocalizacion((byte[])reader[7]);//Funcion que devuelva un Objeto de BitmapImage pasandole esto --> reader.GetString(13)
+                    try
+                    {
+                        if (!reader[2].GetType().ToString().Equals("System.DBNull")) mr.PropImagenEquipo = SacarImagenDB((byte[])reader[2]);
+
+                        if (!reader[2].GetType().ToString().Equals("System.DBNull")) mr.PropImagenLoc = SacarImagenDB((byte[])reader[7]);
+
+                    }catch(Exception e)
+                    {
+                        if (!error)
+                        {
+                            MessageBox.Show("Registros sin imagen", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            error = true;
+                        }
+                    }
 
                     lista.Add(mr);
                 }
@@ -165,7 +170,7 @@ namespace ProyectoSteamVinito.Core
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Consultar Registros: " + ex.Message);
                 CerrarConexion();
             }
 
@@ -182,14 +187,20 @@ namespace ProyectoSteamVinito.Core
                 AbrirConexion();
                 reader = comando.ExecuteReader();
 
+
+
                 while (reader.Read())
                 {
-                    lista.Add(new ModeloEquipo() { Id = reader.GetString(0), Nombre = reader.GetString(1)});
+                    BitmapImage img = null;
+                    if (!reader[2].GetType().ToString().Equals("System.DBNull")) img = SacarImagenDB((byte[])reader[2]);
+
+                    lista.Add(new ModeloEquipo() { Id = reader.GetString(0), Nombre = reader.GetString(1), Image = img});
                 }
                 CerrarConexion();
             }catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Consultar Equipos: "+ex.Message);
+                CerrarConexion();
             }
             return lista;
         }
@@ -212,7 +223,7 @@ namespace ProyectoSteamVinito.Core
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Consultar Grupos: " + ex.Message);
             }
             return lista;
         }
@@ -229,13 +240,16 @@ namespace ProyectoSteamVinito.Core
 
                 while (reader.Read())
                 {
-                    lista.Add(new ModeloLocalizacion() { Id = reader.GetString(0), Nombre = reader.GetString(1) });
+                    BitmapImage img = null;
+                    if (!reader[2].GetType().ToString().Equals("System.DBNull")) img = SacarImagenDB((byte[])reader[2]);
+                    lista.Add(new ModeloLocalizacion() { Id = reader.GetString(0), Nombre = reader.GetString(1), Image = img });
                 }
                 CerrarConexion();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Consultar Localizacion: " + ex.Message);
+                CerrarConexion();
             }
             return lista;
         }
@@ -258,7 +272,7 @@ namespace ProyectoSteamVinito.Core
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Consultar Objetivo: " + ex.Message);
             }
             return lista;
         }
@@ -281,7 +295,7 @@ namespace ProyectoSteamVinito.Core
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Consultar Operacion: " + ex.Message);
             }
             return lista;
         }
@@ -299,7 +313,7 @@ namespace ProyectoSteamVinito.Core
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error Eliminar Registro: " + ex.Message);
             }
             CerrarConexion();
             return eliminado;

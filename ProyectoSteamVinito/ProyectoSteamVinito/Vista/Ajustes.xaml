@@ -7,8 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.CommandBindings>
-        <CommandBinding Command="local:Comando.Agregar" Executed="EjecutarAgregado"/>
-        <CommandBinding Command="local:Comando.Modificar" Executed="EjecutarModificado"/>
         <CommandBinding Command="local:Comando.Eliminar" Executed="EjecutarEliminado"/>
     </UserControl.CommandBindings>
     <Grid Loaded="Grid_Loaded">
@@ -89,27 +87,26 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <!--Comentar esta forma de hacerlo luego a Angel-->
-                <DataGrid x:Name="dataGridAjustes" Grid.Row="1" Margin="10,0" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
+                <DataGrid x:Name="dataGridAjustes" Grid.Row="1" Margin="10,0" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False" SelectionChanged="dataGridAjustes_SelectionChanged">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Id, Mode=OneWay}"/>
                         <DataGridTextColumn Header="Nombre" Width="*" Binding="{Binding Nombre, Mode=OneWay}"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
             <StackPanel Orientation="Vertical" Grid.Column="1">
                 <!--Boton Agregar-->
-                <Button Margin="10,10" Command="local:Comando.Agregar">
+                <Button Margin="10,10">
                     <Button.Content>Añadir</Button.Content>
                 </Button>
                 <!--Boton Modificar-->
-                <Button Margin="10,10"  Command="local:Comando.Modificar">
+                <Button Margin="10,10" Cursor="Hand">
                     <Button.Content>Modificar</Button.Content>
                 </Button>
                 <!--Boton Eliminar-->
                 <Button Margin="10,10"  Command="local:Comando.Eliminar">
                     <Button.Content>Eliminar</Button.Content>
                 </Button>
-                <Image Height="100" Width="100" x:Name="colImagen" Source="./logo-IESGP-FP.png"/>
+                <Image Height="100" Width="100" x:Name="colImagen"/>
             </StackPanel>
         </Grid>
     </Grid>

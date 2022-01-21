@@ -13,7 +13,6 @@ namespace ProyectoSteamVinito.Vista
     public partial class Inicio : Window
     {
         private VistaModeloVistaPrincipal vmvp;
-        private static Boolean esCarga = true;
         private static Timer timerPantallaCarga = new System.Timers.Timer();
         public Inicio()
         {
@@ -22,7 +21,7 @@ namespace ProyectoSteamVinito.Vista
            
                 
             timerPantallaCarga.Elapsed += timer_Tick;
-            timerPantallaCarga.Interval = 3000;
+            timerPantallaCarga.Interval = 5000;
             timerPantallaCarga.Enabled = true;
             timerPantallaCarga.Start();
             

@@ -158,12 +158,27 @@ namespace ProyectoSteamVinito.Vista
             }
             else MessageBox.Show("¡Elige un dato a eliminar!", "Imposible eliminar", MessageBoxButton.OK, MessageBoxImage.Error);
         }
+
+        private void dataGridAjustes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (dataGridAjustes.SelectedIndex != -1)
+            {
+
+                if (tablaActual.Equals("localizacion"))
+                {
+                    colImagen.Source = ((ModeloLocalizacion)dataGridAjustes.SelectedItem).Image;
+                }
+
+                if (tablaActual.Equals("equipo"))
+                {
+                    colImagen.Source = ((ModeloEquipo)dataGridAjustes.SelectedItem).Image;
+                }
+            }
+        }
     }
 
     public static class Comando
     {
-        public static readonly RoutedUICommand Agregar = new RoutedUICommand("Accion de agregar registro", "Agregar", typeof(Comando));
-        public static readonly RoutedUICommand Modificar = new RoutedUICommand("Accion de modificar registro", "Modificar", typeof(Comando));
         public static readonly RoutedUICommand Eliminar = new RoutedUICommand("Accion de eliminar registro", "Eliminar", typeof(Comando));
     }
 }
