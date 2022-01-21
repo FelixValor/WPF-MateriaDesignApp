@@ -45,9 +45,15 @@ namespace ProyectoSteamVinito.VistaModelo
         public void CargarRegistros(String[] datos)
         {
             ObservableCollection<ModeloRegistro> registros;
-            //registros = fbd.consultarRegistros( filtrado: new String[] { null, null, null, null, null } );
             registros = fbd.consultarRegistros(filtrado: datos);
             Registros = registros;
+            ////////////////
+            /////////////////
+            //////////////
+            //Aqui tienes que avisar a la pantalla de carga que ya se puede ir
+            ////////////////
+            /////////////////
+            //////////////
         }
 
         public void CargarEquipos()
