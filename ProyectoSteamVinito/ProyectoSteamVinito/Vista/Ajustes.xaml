@@ -9,6 +9,23 @@
     <UserControl.CommandBindings>
         <CommandBinding Command="local:Comando.Eliminar" Executed="EjecutarEliminado"/>
     </UserControl.CommandBindings>
+    <materialDesign:DialogHost OverlayBackground="Transparent">
+    <materialDesign:DialogHost.DialogContent >
+        <StackPanel Margin="16" >
+            <TextBlock Text="Inserte el nombre:" />
+            <TextBox Margin="0 8 0 0" HorizontalAlignment="Stretch" x:Name="txtDialog" />
+            <Button Margin="0 8 0 0"  Visibility="Collapsed" x:Name="btnImportarImagen" Click="btnImportarImagen_Click">Importar imagen</Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btnAnnadir" Style="{StaticResource MaterialDesignFlatButton}" IsDefault="True" Margin="0 8 8 0" Content="AÑADIR" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Click="btnAnnadir_Click">
+
+                </Button>
+                <Button Style="{StaticResource MaterialDesignFlatButton}" IsCancel="True" Margin="0 8 8 0" Content="CANCELAR" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">
+
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </materialDesign:DialogHost.DialogContent>
+
     <Grid Loaded="Grid_Loaded">
         <Grid.ColumnDefinitions>
             <ColumnDefinition  MaxWidth="200" MinWidth="75" Width="*" />
@@ -89,17 +106,18 @@
                 <!--Comentar esta forma de hacerlo luego a Angel-->
                 <DataGrid x:Name="dataGridAjustes" Grid.Row="1" Margin="10,0" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False" SelectionChanged="dataGridAjustes_SelectionChanged">
                     <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Width="*" Binding="{Binding Id, Mode=OneWay}" Visibility="Collapsed" />
                         <DataGridTextColumn Header="Nombre" Width="*" Binding="{Binding Nombre, Mode=OneWay}"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
             <StackPanel Orientation="Vertical" Grid.Column="1">
                 <!--Boton Agregar-->
-                <Button Margin="10,10">
+                <Button x:Name="btnAnnadirRegistro" Margin="10,10" Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}" Click="btnAnnadirRegistro_Click" >
                     <Button.Content>Añadir</Button.Content>
                 </Button>
                 <!--Boton Modificar-->
-                <Button Margin="10,10" Cursor="Hand">
+                    <Button x:Name="btnModificarRegistro" Margin="10,10" Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}" Cursor="Hand" Click="btnModificarRegistro_Click" IsEnabled="False">
                     <Button.Content>Modificar</Button.Content>
                 </Button>
                 <!--Boton Eliminar-->
@@ -110,4 +128,5 @@
             </StackPanel>
         </Grid>
     </Grid>
+    </materialDesign:DialogHost>
 </UserControl>

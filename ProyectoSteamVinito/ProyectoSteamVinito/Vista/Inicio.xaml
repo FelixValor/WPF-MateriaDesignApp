@@ -50,7 +50,7 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel Orientation="Horizontal">
                             <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Inicio"
-                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" >
                             </Button>
                             <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Settings, Size=50}" ToolTip="Ajustes"
                                     IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
@@ -89,10 +89,10 @@
                         </Grid.ColumnDefinitions>
                         <StackPanel Orientation="Horizontal">
                             <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Inicio"
-                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"  Cursor="Hand">
                             </Button>
                             <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Settings, Size=50}" ToolTip="Ajustes"
-                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand" >
                             </Button>
                         </StackPanel>
                         <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
@@ -109,7 +109,7 @@
                     Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
                     HorizontalAlignment="Right" VerticalAlignment="Bottom" Cursor="Hand" Visibility="Collapsed"></Button>
         <Button x:Name="btnAnterior" Grid.Row="1" Style="{DynamicResource MaterialDesignFlatButton}" Margin="5"
-                    Command="{x:Static materialDesign:Transitioner.MovePreviousCommand}"
+                    Command="{x:Static materialDesign:Transitioner.MovePreviousCommand }" 
                     HorizontalAlignment="Right" VerticalAlignment="Bottom" Cursor="Hand" Visibility="Collapsed"></Button>
 
     </Grid>

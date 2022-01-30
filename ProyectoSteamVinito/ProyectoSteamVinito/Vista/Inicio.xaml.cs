@@ -1,4 +1,5 @@
 ﻿
+using MaterialDesignThemes.Wpf;
 using ProyectoSteamVinito.VistaModelo;
 using System;
 using System.Timers;
@@ -58,6 +59,7 @@ namespace ProyectoSteamVinito.Vista
         {
             transitioner.SelectedIndex = 3;
             Title = "Proyecto Vinito -- Inicio";
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
