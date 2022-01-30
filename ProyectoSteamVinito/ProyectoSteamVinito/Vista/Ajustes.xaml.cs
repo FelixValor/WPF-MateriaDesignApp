@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+using System.Data;
 
 namespace ProyectoSteamVinito.Vista
 {
@@ -24,6 +26,10 @@ namespace ProyectoSteamVinito.Vista
         private VistaModeloAjustes vma;
         private string tablaActual;
         private FuncionesBaseDatos fbd = new FuncionesBaseDatos();
+        private OpenFileDialog dlg = new OpenFileDialog();
+        private String imagen=null;
+        private String accion="";
+        private String id = "";
         public Ajustes()
         {
             InitializeComponent();
@@ -90,6 +96,7 @@ namespace ProyectoSteamVinito.Vista
             dataGridAjustes.ItemsSource = vma.Localizaciones;
             tablaActual = "localizacion";
             colImagen.Visibility = Visibility.Visible;
+            colImagen.Source = null;
         }
 
         private void btnEquipo_Large_Click(object sender, RoutedEventArgs e)
@@ -98,6 +105,7 @@ namespace ProyectoSteamVinito.Vista
             dataGridAjustes.ItemsSource = vma.Equipos;
             tablaActual = "equipo";
             colImagen.Visibility = Visibility.Visible;
+            colImagen.Source = null;
         }
 
         private void btnOperacion_Large_Click(object sender, RoutedEventArgs e)
@@ -163,7 +171,7 @@ namespace ProyectoSteamVinito.Vista
         {
             if (dataGridAjustes.SelectedIndex != -1)
             {
-
+                btnModificarRegistro.IsEnabled = true;
                 if (tablaActual.Equals("localizacion"))
                 {
                     colImagen.Source = ((ModeloLocalizacion)dataGridAjustes.SelectedItem).Image;
@@ -172,6 +180,92 @@ namespace ProyectoSteamVinito.Vista
                 if (tablaActual.Equals("equipo"))
                 {
                     colImagen.Source = ((ModeloEquipo)dataGridAjustes.SelectedItem).Image;
+                }
+            }
+            else
+            {
+                btnModificarRegistro.IsEnabled = false;
+            }
+        }
+
+        public void btnImportarImagen_Click(object sender, RoutedEventArgs e)
+        {
+            
+            dlg.Title = "Selecciona una imagen";
+            dlg.Filter = "Imagenes (.png)|*.jpg;*.jpeg;*.png;";
+            dlg.Multiselect = false;
+            if (dlg.ShowDialog() == true)
+            {
+                imagen = dlg.FileName;
+            }
+            
+        }
+
+        public void verBtnImportar()
+        {
+            if (tablaActual.Equals("equipo") || tablaActual.Equals("localizacion"))
+            {
+                btnImportarImagen.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnImportarImagen.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void btnAnnadir_Click(object sender, RoutedEventArgs e)
+        {
+            if (accion.Equals("a"))
+            {
+                String nombre = txtDialog.Text;
+                fbd.MeterImagenDB(imagen, tablaActual, nombre);
+                txtDialog.Clear();
+                dlg.Reset();
+            }
+            else
+            {
+                String nombre = txtDialog.Text;
+                fbd.ActualizarImagenDB(imagen, tablaActual, nombre,id);
+                txtDialog.Clear();
+                dlg.Reset();
+            }
+            
+        }
+
+        private void btnAnnadirRegistro_Click(object sender, RoutedEventArgs e)
+        {
+            txtDialog.Clear();
+            dlg.Reset();
+            verBtnImportar();
+            accion = "a";
+        }
+
+        private void btnModificarRegistro_Click(object sender, RoutedEventArgs e)
+        {
+            verBtnImportar();
+            accion = "m";
+            if (dataGridAjustes.SelectedItems.Count > 0)
+            {
+                txtDialog.Text = dataGridAjustes.SelectedItem.ToString();
+                if (tablaActual.Equals("grupo"))
+                {
+                    id = ((ModeloGrupo)dataGridAjustes.SelectedItem).Id.ToString();
+                }
+                else if (tablaActual.Equals("localizacion"))
+                {
+                    id = ((ModeloLocalizacion)dataGridAjustes.SelectedItem).Id.ToString();
+                }
+                else if (tablaActual.Equals("equipo"))
+                {
+                    id = ((ModeloEquipo)dataGridAjustes.SelectedItem).Id.ToString();
+                }
+                else if (tablaActual.Equals("operacion"))
+                {
+                    id = ((ModeloOperacion)dataGridAjustes.SelectedItem).Id.ToString();
+                }
+                else if (tablaActual.Equals("objetivo"))
+                {
+                    id = ((ModeloObjetivo)dataGridAjustes.SelectedItem).Id.ToString();
                 }
             }
         }

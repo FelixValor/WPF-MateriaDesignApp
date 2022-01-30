@@ -54,6 +54,68 @@ namespace ProyectoSteamVinito.Core
             return imageSource;
         }
 
+        public void MeterImagenDB(String ruta,String tabla,String nombre)
+        {
+            string sql = "INSERT INTO "+tabla+" (nombre,imagen) VALUES (@name,@file)";
+            // remember 'using' statements to efficiently release unmanaged resources
+            using (conexionBD)
+            {
+                AbrirConexion();
+                using (var cmd = new MySqlCommand(sql, conexionBD))
+                {
+                    cmd.Parameters.AddWithValue("@name", nombre);
+                    cmd.Parameters.AddWithValue("@file", File.ReadAllBytes(ruta));
+                    cmd.ExecuteNonQuery();
+                    CerrarConexion();
+                }
+            }
+        }
+
+        public void ActualizarImagenDB(String ruta, String tabla, String nombre,String id)
+        {
+            if (tabla.Equals("equipo") || tabla.Equals("localizacion"))
+            {
+                string sql = "UPDATE " + tabla + " SET nombre=@name,imagen=@file WHERE id_" + tabla + "=" + id;
+
+                using (conexionBD)
+                {
+                    AbrirConexion();
+                    using (var cmd = new MySqlCommand(sql, conexionBD))
+                    {
+                        cmd.Parameters.AddWithValue("@name", nombre);
+                        if(ruta != null)
+                        {
+                            cmd.Parameters.AddWithValue("@file", File.ReadAllBytes(ruta));
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@file", null);
+                        }
+                        
+                        cmd.ExecuteNonQuery();
+                        CerrarConexion();
+                    }
+                }
+            }
+            else
+            {
+                string sql = "UPDATE " + tabla + " SET nombre=@name WHERE id_" + tabla + "=" + id;
+
+                using (conexionBD)
+                {
+                    AbrirConexion();
+                    using (var cmd = new MySqlCommand(sql, conexionBD))
+                    {
+                        cmd.Parameters.AddWithValue("@name", nombre);
+                        cmd.ExecuteNonQuery();
+                        CerrarConexion();
+                    }
+                }
+            }
+
+            
+        }
+
         public void AbrirConexion()
         {
             try
@@ -318,5 +380,7 @@ namespace ProyectoSteamVinito.Core
             CerrarConexion();
             return eliminado;
         }
+
+        
     }
 }
