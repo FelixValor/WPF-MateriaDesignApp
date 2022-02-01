@@ -218,14 +218,14 @@ namespace ProyectoSteamVinito.Vista
             if (accion.Equals("a"))
             {
                 String nombre = txtDialog.Text;
-                fbd.MeterImagenDB(imagen, tablaActual, nombre);
+                fbd.AgregarRegistroDB(imagen, tablaActual, nombre);
                 txtDialog.Clear();
                 dlg.Reset();
             }
             else
             {
                 String nombre = txtDialog.Text;
-                fbd.ActualizarImagenDB(imagen, tablaActual, nombre,id);
+                fbd.ActualizarRegistroDB(imagen, tablaActual, nombre,id);
                 txtDialog.Clear();
                 dlg.Reset();
             }

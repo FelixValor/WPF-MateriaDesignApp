@@ -7,24 +7,33 @@ using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using System.Xml.Serialization;
 
 namespace ProyectoSteamVinito.Core
 {
     public class FuncionesBaseDatos
     {
         //CONEXION BASE DE DATOS
-        private string servidor = "localhost"; //Nombre o ip del servidor de MySQL
-        private string bd = "bodega"; //Nombre de la base de datos
-        private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "admin"; //Contraseña de usuario de acceso a MySQL
+        private string servidor; //Nombre o ip del servidor de MySQL
+        private string bd; //Nombre de la base de datos
+        private string usuario; //Usuario de acceso a MySQL
+        private string password; //Contraseña de usuario de acceso a MySQL
         private MySqlConnection conexionBD;
         private MySqlDataReader reader;
         private MySqlCommand comando;
         private bool error;
         private string cadenaConexion;
-
+        private string RutaArchivoXML = "../../../Core/setting.xml";
         public FuncionesBaseDatos()
         {
+            XmlSerializer reader = new XmlSerializer(typeof(Setting));
+            StreamReader archivoleer = new StreamReader(RutaArchivoXML);
+            Setting config = (Setting)reader.Deserialize(archivoleer);
+            archivoleer.Close();
+            servidor = config.Servidor;
+            bd = config.BD;
+            usuario = config.Usuario;
+            password = config.Password;
             //Crearemos la cadena de conexión concatenando las variables
             cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
 
@@ -54,24 +63,69 @@ namespace ProyectoSteamVinito.Core
             return imageSource;
         }
 
-        public void MeterImagenDB(String ruta,String tabla,String nombre)
+        public void AgregarRegistroDB(String ruta,String tabla,String nombre)
         {
-            string sql = "INSERT INTO "+tabla+" (nombre,imagen) VALUES (@name,@file)";
-            // remember 'using' statements to efficiently release unmanaged resources
-            using (conexionBD)
+            if (tabla.Equals("equipo") || tabla.Equals("localizacion"))
             {
-                AbrirConexion();
-                using (var cmd = new MySqlCommand(sql, conexionBD))
+
+                string sql = "INSERT INTO " + tabla + " (nombre,imagen) VALUES (@name,@file)";
+                // remember 'using' statements to efficiently release unmanaged resources
+                using (conexionBD)
                 {
-                    cmd.Parameters.AddWithValue("@name", nombre);
-                    cmd.Parameters.AddWithValue("@file", File.ReadAllBytes(ruta));
-                    cmd.ExecuteNonQuery();
-                    CerrarConexion();
+                    AbrirConexion();
+                    using (var cmd = new MySqlCommand(sql, conexionBD))
+                    {
+                        try
+                        {
+                            cmd.Parameters.AddWithValue("@name", nombre);
+                            if (ruta != null)
+                            {
+                                cmd.Parameters.AddWithValue("@file", File.ReadAllBytes(ruta));
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@file", null);
+                            }
+                            cmd.ExecuteNonQuery();
+                            CerrarConexion();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error con la base de datos\n\nCausa:\n" + ex, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
+                    }
+                }
+
+            }
+            else
+            {
+                string sql = "INSERT INTO " + tabla + " (nombre) VALUES (@name)";
+                // remember 'using' statements to efficiently release unmanaged resources
+                using (conexionBD)
+                {
+                    AbrirConexion();
+                    using (var cmd = new MySqlCommand(sql, conexionBD))
+                    {
+                        try
+                        {
+                            cmd.Parameters.AddWithValue("@name", nombre);
+                            cmd.ExecuteNonQuery();
+                            CerrarConexion();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error con la base de datos\n\nCausa:\n" + ex, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+
+                        }
+                        
+                    }
                 }
             }
+
+
         }
 
-        public void ActualizarImagenDB(String ruta, String tabla, String nombre,String id)
+        public void ActualizarRegistroDB(String ruta, String tabla, String nombre,String id)
         {
             if (tabla.Equals("equipo") || tabla.Equals("localizacion"))
             {
@@ -82,18 +136,26 @@ namespace ProyectoSteamVinito.Core
                     AbrirConexion();
                     using (var cmd = new MySqlCommand(sql, conexionBD))
                     {
-                        cmd.Parameters.AddWithValue("@name", nombre);
-                        if(ruta != null)
+                        try
                         {
-                            cmd.Parameters.AddWithValue("@file", File.ReadAllBytes(ruta));
+                            cmd.Parameters.AddWithValue("@name", nombre);
+                            if (ruta != null)
+                            {
+                                cmd.Parameters.AddWithValue("@file", File.ReadAllBytes(ruta));
+                            }
+                            else
+                            {
+                                cmd.Parameters.AddWithValue("@file", null);
+                            }
+
+                            cmd.ExecuteNonQuery();
+                            CerrarConexion();
                         }
-                        else
+                        catch (Exception ex)
                         {
-                            cmd.Parameters.AddWithValue("@file", null);
+                            MessageBox.Show("Error con la base de datos\n\nCausa:\n" + ex, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                         
-                        cmd.ExecuteNonQuery();
-                        CerrarConexion();
                     }
                 }
             }
@@ -106,9 +168,17 @@ namespace ProyectoSteamVinito.Core
                     AbrirConexion();
                     using (var cmd = new MySqlCommand(sql, conexionBD))
                     {
-                        cmd.Parameters.AddWithValue("@name", nombre);
-                        cmd.ExecuteNonQuery();
-                        CerrarConexion();
+                        try
+                        {
+                            cmd.Parameters.AddWithValue("@name", nombre);
+                            cmd.ExecuteNonQuery();
+                            CerrarConexion();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error con la base de datos\n\nCausa:\n" + ex, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
+                        
                     }
                 }
             }
@@ -220,7 +290,7 @@ namespace ProyectoSteamVinito.Core
                     {
                         if (!error)
                         {
-                            MessageBox.Show("Registros sin imagen", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            //MessageBox.Show("Registros sin imagen", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                             error = true;
                         }
                     }

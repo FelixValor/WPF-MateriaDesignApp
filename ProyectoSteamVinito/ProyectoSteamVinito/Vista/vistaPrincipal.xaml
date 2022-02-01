@@ -36,7 +36,7 @@
                 <ComboBox x:Name="cmbLocalizacion" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
                 <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox x:Name="cmbObjetivo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
-                <TextBlock Text="Operacioness: " VerticalAlignment="Center" Margin="10,0"/>
+                <TextBlock Text="Operaciones: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox x:Name="cmbOperaciones" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
             </StackPanel>
             

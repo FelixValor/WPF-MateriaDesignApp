@@ -50,7 +50,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.9.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.1.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -76,7 +76,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.9.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.1.0")]
         public static void Main() {
             ProyectoSteamVinito___Formulario_Insercion.App app = new ProyectoSteamVinito___Formulario_Insercion.App();
             app.InitializeComponent();
