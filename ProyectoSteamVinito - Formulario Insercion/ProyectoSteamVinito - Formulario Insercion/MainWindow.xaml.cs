@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-
+using System.Xml.Serialization;
 using MySql.Data.MySqlClient;
 
 namespace ProyectoSteamVinito___Formulario_Insercion
@@ -24,16 +25,26 @@ namespace ProyectoSteamVinito___Formulario_Insercion
     /// </summary>
     public partial class MainWindow : Window
     {
-        private static string servidor = "localhost"; //Nombre o ip del servidor de MySQL
-        private string bd = "bodega"; //Nombre de la base de datos
-        private string usuario = "root"; //Usuario de acceso a MySQL
-        private string password = "inves"; //Contraseña de usuario de acceso a MySQL
+        private static string servidor; //Nombre o ip del servidor de MySQL
+        private string bd; //Nombre de la base de datos
+        private string usuario; //Usuario de acceso a MySQL
+        private string password; //Contraseña de usuario de acceso a MySQL
         private string datos = null; //Variable para almacenar el resultado
         private static Boolean esCarga = true;
-        private static Timer timerPantallaCarga = new System.Timers.Timer(); 
-
+        private static Timer timerPantallaCarga = new System.Timers.Timer();
+        private string RutaArchivoXML = "../../../setting.xml";
         public MainWindow()
         {
+
+            XmlSerializer r = new XmlSerializer(typeof(Setting));
+            StreamReader archivoleer = new StreamReader(RutaArchivoXML);
+            Setting config = (Setting)r.Deserialize(archivoleer);
+            archivoleer.Close();
+            servidor = config.Servidor;
+            bd = config.BD;
+            password = config.Password;
+            usuario = config.Usuario;
+            
             InitializeComponent();
             //btnEnviar.IsEnabled = false;
             //btnEnviar2.IsEnabled = false;
@@ -86,7 +97,7 @@ namespace ProyectoSteamVinito___Formulario_Insercion
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
                 VistaTabular.Visibility = Visibility.Visible;
-                PantallaDeCarga.Visibility = Visibility.Collapsed;
+                transitioner.SelectedIndex = 1;
                 esCarga = false;
                 timerPantallaCarga.Stop();
             }));

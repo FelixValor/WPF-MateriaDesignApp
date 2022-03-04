@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace ProyectoSteamVinito.VistaModelo
 {
-    internal class VistaModeloVistaPrincipal
+    public class VistaModeloVistaPrincipal
     {
         FuncionesBaseDatos fbd = new FuncionesBaseDatos();
 
@@ -42,11 +42,18 @@ namespace ProyectoSteamVinito.VistaModelo
             get; set;
         }
 
-        public void CargarRegistros()
+        public void CargarRegistros(String[] datos)
         {
             ObservableCollection<ModeloRegistro> registros;
-            registros = fbd.consultarRegistros();
+            registros = fbd.consultarRegistros(filtrado: datos);
             Registros = registros;
+            ////////////////
+            /////////////////
+            //////////////
+            //Aqui tienes que avisar a la pantalla de carga que ya se puede ir
+            ////////////////
+            /////////////////
+            //////////////
         }
 
         public void CargarEquipos()

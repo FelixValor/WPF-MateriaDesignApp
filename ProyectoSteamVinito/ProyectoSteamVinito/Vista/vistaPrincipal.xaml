@@ -25,7 +25,7 @@
                 <DatePicker x:Name="dtpFFinal" VerticalAlignment="Center" Width="100"  FirstDayOfWeek="Monday"/>
                 <TextBlock Text="Equipo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox x:Name="cmbEquipo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Equipos}" />
-                <Button x:Name="btnBuscar" Content="Buscar" Margin="30,0,20,0" Cursor="Hand"/>
+                <Button x:Name="btnBuscar" Content="Buscar" Margin="30,0,20,0" Cursor="Hand" Click="btnBuscar_Click"/>
                 <Button x:Name="btnDefecto" Content="Valores Defecto" Click="btnDefecto_Click" />
             </StackPanel>
 
@@ -36,11 +36,11 @@
                 <ComboBox x:Name="cmbLocalizacion" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Localizaciones}"/>
                 <TextBlock Text="Objetivo: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox x:Name="cmbObjetivo" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Objetivos}"/>
-                <TextBlock Text="Operacioness: " VerticalAlignment="Center" Margin="10,0"/>
+                <TextBlock Text="Operaciones: " VerticalAlignment="Center" Margin="10,0"/>
                 <ComboBox x:Name="cmbOperaciones" VerticalAlignment="Center" Width="100" ItemsSource="{Binding Operaciones}"/>
             </StackPanel>
             
-            <DataGrid Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
+            <DataGrid x:Name="dtgRegistros" Grid.Row="3" Margin="10,0" ItemsSource="{Binding Registros}" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" CanUserDeleteRows="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Equipos" Width="*" Binding="{Binding PropModeloEquipo, Mode=OneWay}"/>
                     <DataGridTextColumn Header="Grupos" Width="*" Binding="{Binding PropModeloGrupo, Mode=OneWay}"/>
@@ -48,6 +48,23 @@
                     <DataGridTextColumn Header="Objetivos" Width="*" Binding="{Binding PropModeloObjetivo, Mode=OneWay}"/>
                     <DataGridTextColumn Header="Operaciones" Width="*" Binding="{Binding PropModeloOperacion, Mode=OneWay}"/>
                 </DataGrid.Columns>
+                <DataGrid.RowDetailsTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Equipo" Grid.Column="0" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                            <Image Height="100" Source="{Binding PropImagenEquipo}" Grid.Column="1"/>
+                            <Label Content="Localización" Grid.Column="2" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                            <Image Height="100" Source="{Binding PropImagenLoc}" Grid.Column="3"/>
+                        </Grid>
+
+                    </DataTemplate>
+                </DataGrid.RowDetailsTemplate>
             </DataGrid>
         </Grid>
 

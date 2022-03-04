@@ -1,4 +1,5 @@
 ﻿
+using MaterialDesignThemes.Wpf;
 using ProyectoSteamVinito.VistaModelo;
 using System;
 using System.Timers;
@@ -12,8 +13,7 @@ namespace ProyectoSteamVinito.Vista
     /// </summary>
     public partial class Inicio : Window
     {
-        VistaModeloVistaPrincipal vmvp;
-        private static Boolean esCarga = true;
+        private VistaModeloVistaPrincipal vmvp;
         private static Timer timerPantallaCarga = new System.Timers.Timer();
         public Inicio()
         {
@@ -22,7 +22,7 @@ namespace ProyectoSteamVinito.Vista
            
                 
             timerPantallaCarga.Elapsed += timer_Tick;
-            timerPantallaCarga.Interval = 3000;
+            timerPantallaCarga.Interval = 5000;
             timerPantallaCarga.Enabled = true;
             timerPantallaCarga.Start();
             
@@ -32,22 +32,16 @@ namespace ProyectoSteamVinito.Vista
         {
             Application.Current.Dispatcher.Invoke(new Action(() =>
             {
-                botoneraSuperior.Visibility = Visibility.Visible;
-                vistaPrincipal.Visibility = Visibility.Visible;
-                vistaAjustes.Visibility = Visibility.Collapsed;
-                pantallaCarga.Visibility = Visibility.Collapsed;
+                transitioner.SelectedIndex = 3;
                 timerPantallaCarga.Stop();
             }));
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            botoneraSuperior.Visibility = Visibility.Collapsed;
-            vistaPrincipal.Visibility = Visibility.Collapsed;
-            vistaAjustes.Visibility = Visibility.Collapsed;
-            pantallaCarga.Visibility = Visibility.Visible;
+            
 
             vmvp = new VistaModeloVistaPrincipal();
-            vmvp.CargarRegistros();
+            vmvp.CargarRegistros(new String[] { null, null, null, null, null,null, null });
             vmvp.CargarEquipos();
             vmvp.CargarGrupos();
             vmvp.CargarLocalizaciones();
@@ -63,15 +57,14 @@ namespace ProyectoSteamVinito.Vista
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            vistaAjustes.Visibility = Visibility.Collapsed;
-            vistaPrincipal.Visibility = Visibility.Visible;
+            transitioner.SelectedIndex = 3;
             Title = "Proyecto Vinito -- Inicio";
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            vistaAjustes.Visibility = Visibility.Visible;
-            vistaPrincipal.Visibility = Visibility.Collapsed;
+            transitioner.SelectedIndex = 2;
             Title = "Proyecto Vinito -- Ajustes";
         }
     }

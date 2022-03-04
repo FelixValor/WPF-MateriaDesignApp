@@ -7,30 +7,110 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="Proyecto Vinito -- Inicio" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded"
-        MinWidth="730" MinHeight="500" MaxHeight="750" MaxWidth="1000">
+        MinWidth="850" MinHeight="500" MaxHeight="750" MaxWidth="1000">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid x:Name="botoneraSuperior">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
 
-            <StackPanel Orientation="Horizontal">
-                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Inicio"
-                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}">
-                </Button>
-                <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Settings, Size=50}" ToolTip="Ajustes"
-                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
-                </Button>
-            </StackPanel>
-            <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
-        </Grid>
-            <local:vistaPrincipal x:Name="vistaPrincipal" Grid.Row="1"/>
-            <local:Ajustes x:Name="vistaAjustes" Grid.Row="1"/>
-            <local:PantallaCarga x:Name="pantallaCarga" Grid.Row="1"/>
+
+        <materialDesign:Transitioner x:Name="transitioner" SelectedIndex="0" AutoApplyTransitionOrigins="True">
+
+
+            <local:PantallaCarga ></local:PantallaCarga>
+            <!--DIAPOSITIVA 1-->
+            <materialDesign:TransitionerSlide>
+                
+
+
+            </materialDesign:TransitionerSlide>
+
+            <!--DIAPOSITIVA 2-->
+            <materialDesign:TransitionerSlide>
+
+
+
+                <materialDesign:TransitionerSlide.ForwardWipe>
+                    <materialDesign:SlideWipe Direction="Right"/>
+                </materialDesign:TransitionerSlide.ForwardWipe>
+                <materialDesign:TransitionerSlide.OpeningEffects>
+                    <materialDesign:TransitionEffect Kind="SlideInFromRight"></materialDesign:TransitionEffect>
+                </materialDesign:TransitionerSlide.OpeningEffects>
+
+
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Inicio"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" >
+                            </Button>
+                            <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Settings, Size=50}" ToolTip="Ajustes"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand">
+                            </Button>
+                        </StackPanel>
+                        <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
+                    </Grid>
+                    <local:Ajustes x:Name="vistaAjustes" Grid.Row="1"/>
+                </Grid>
+            </materialDesign:TransitionerSlide>
+
+
+            <!--DIAPOSITIVA 1 DE NUEVO-->
+            <materialDesign:TransitionerSlide>
+
+                <!--no borrar-->
+                <materialDesign:TransitionerSlide.BackwardWipe>
+                    <materialDesign:SlideWipe/>
+                </materialDesign:TransitionerSlide.BackwardWipe>
+
+                <materialDesign:TransitionerSlide.ForwardWipe>
+                    <materialDesign:SlideWipe Direction="Right"/>
+                </materialDesign:TransitionerSlide.ForwardWipe>
+
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click" Content="{materialDesign:PackIcon Kind=ContentCopy, Size=50}" ToolTip="Inicio"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"  Cursor="Hand">
+                            </Button>
+                            <Button Padding="0" Margin="10,0" Height="60" Width="60" Click="Button_Click_1" Content="{materialDesign:PackIcon Kind=Settings, Size=50}" ToolTip="Ajustes"
+                                    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Cursor="Hand" >
+                            </Button>
+                        </StackPanel>
+                        <Image  Grid.Column="1" HorizontalAlignment="Right" Source="/Vista/logo-IESGP-FP.png" Margin="10"/>
+                    </Grid>
+                    <local:vistaPrincipal  x:Name="vistaPrincipal" Grid.Row="1"/>
+                </Grid>
+            </materialDesign:TransitionerSlide>
+
+        </materialDesign:Transitioner>
+
+
+
+        <Button x:Name="btnSiguiente" Grid.Row="1" Style="{DynamicResource MaterialDesignFlatButton}" Margin="5"
+                    Command="{x:Static materialDesign:Transitioner.MoveNextCommand}"
+                    HorizontalAlignment="Right" VerticalAlignment="Bottom" Cursor="Hand" Visibility="Collapsed"></Button>
+        <Button x:Name="btnAnterior" Grid.Row="1" Style="{DynamicResource MaterialDesignFlatButton}" Margin="5"
+                    Command="{x:Static materialDesign:Transitioner.MovePreviousCommand }" 
+                    HorizontalAlignment="Right" VerticalAlignment="Bottom" Cursor="Hand" Visibility="Collapsed"></Button>
+
     </Grid>
 </Window>
